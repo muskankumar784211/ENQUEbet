@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📰 Blog & Articles | INNOVerse</title>
+    <meta name="description" content="INNOVerse Blog - Fuel for Curious Minds. Read, reflect, and reinvent with student writeups, research, tech trends, and innovation stories.">
+    <meta name="keywords" content="ENQUEbet, Innovation Club,enquebetenquebet startupenquebet innovationsenquebet techenquebet indiaenquebet ideasenquebet seo College, Projects, Events, Collaboration, Students, Technology, Ideasinnovative startup ideas new startup ideas 2025creative business ideasfuture technology startupscutting edge innovationslatest tech startupsemerging business trendsdisruptive startup ideasnext big startup 2025best startup ideas in indiatech innovation platformnew product innovationstop future inventionsunique business ideas💻 Technology & Gadgetslatest technology trendsai powered toolsmachine learning startupsartificial intelligence gadgetssmart home technologyiot innovationsblockchain startup ideaswearable tech trendsrobotics startup ideascloud computing solutionsquantum computing startups🌱 Sustainability & Green Techsustainable startup ideaseco friendly technologygreen energy innovationrenewable energy startupsclean tech solutionsclimate tech startupssolar energy innovationenvironmental business ideas📈 SEO / Digital Growthseo for startupsstartup seo strategyseo tips 2025digital marketing for startupsgrowth hacking ideasonline visibility for startupsbest seo toolskeyword research 2025organic traffic tipscontent marketing strategy🛠️ How-To & Fundinghow to start a tech startuphow to launch a business ideastartup funding tipsinvestors for startupsbusiness plan for innovationraise seed fundingventure capital for tech startups🧠 Creativity & Trendsfuture business opportunitiesinnovative product designtrending app ideasunique product ideascreative inventions 2025future gadgets listnext generation technology">
+    <meta name="keywords" content="INNOVerse, Blog, Articles, Innovation, Tech Trends, Student Projects, Tutorials, How-To">
+    <meta name="author" content="INNOVerse Club">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme-override.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        .blog-hero {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+        .blog-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #6a82fb;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 8px rgba(106, 130, 251, 0.2);
+        }
+        .blog-hero .quote {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #fc5c7d;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        .blog-hero p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .blog-purpose {
+            background: linear-gradient(135deg, #f8f9ff 0%, #fff5f7 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border-left: 4px solid #6a82fb;
+        }
+        .blog-purpose h2 {
+            color: #6a82fb;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .blog-purpose ul {
+            list-style: none;
+            padding: 0;
+        }
+        .blog-purpose li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #555;
+        }
+        .blog-purpose li:before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .blog-categories {
+            margin-bottom: 3rem;
+        }
+        .blog-categories h2 {
+            color: #6a82fb;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .category-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 12px rgba(106, 130, 251, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .category-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 20px rgba(106, 130, 251, 0.2);
+        }
+        .category-card h3 {
+            color: #6a82fb;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        .category-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .category-card li {
+            margin-bottom: 0.5rem;
+            color: #666;
+            font-size: 0.95rem;
+        }
+        .featured-articles {
+            margin-bottom: 3rem;
+        }
+        .featured-articles h2 {
+            color: #6a82fb;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .featured-article {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(106, 130, 251, 0.1);
+            transition: transform 0.3s;
+        }
+        .featured-article:hover {
+            transform: translateY(-5px);
+        }
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .article-content {
+            padding: 1.5rem;
+        }
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .author-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .author-info {
+            flex: 1;
+        }
+        .author-name {
+            font-weight: 600;
+            color: #333;
+            font-size: 0.9rem;
+        }
+        .article-date {
+            color: #666;
+            font-size: 0.8rem;
+        }
+        .article-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+        }
+        .article-excerpt {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        .article-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        .article-tag {
+            background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        .read-more-btn {
+            color: #6a82fb;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        .read-more-btn:hover {
+            color: #fc5c7d;
+        }
+        .blog-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .filter-btn {
+            background: white;
+            border: 2px solid #e0e4ea;
+            color: #666;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+            color: white;
+            border-color: transparent;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(106, 130, 251, 0.1);
+            transition: transform 0.3s;
+        }
+        .blog-card:hover {
+            transform: translateY(-3px);
+        }
+        .blog-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .blog-card-content {
+            padding: 1.5rem;
+        }
+        .blog-card .article-meta {
+            margin-bottom: 0.8rem;
+        }
+        .blog-card .article-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.6rem;
+        }
+        .blog-card .article-excerpt {
+            font-size: 0.9rem;
+            margin-bottom: 0.8rem;
+        }
+        .blog-card .article-tags {
+            margin-bottom: 0.8rem;
+        }
+        .blog-card .article-tag {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.6rem;
+        }
+        .submit-blog-section {
+            background: linear-gradient(135deg, #fff5f7 0%, #f8f9ff 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        .submit-blog-section h2 {
+            color: #fc5c7d;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .submit-blog-section p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .submit-blog-btn {
+            background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .submit-blog-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(106, 130, 251, 0.3);
+        }
+        .blog-submission-form {
+            display: none;
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 4px 20px rgba(106, 130, 251, 0.1);
+        }
+        .blog-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .blog-form .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .blog-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+        .blog-form input,
+        .blog-form select,
+        .blog-form textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0e4ea;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+            font-family: inherit;
+        }
+        .blog-form input:focus,
+        .blog-form select:focus,
+        .blog-form textarea:focus {
+            outline: none;
+            border-color: #6a82fb;
+            box-shadow: 0 0 0 3px rgba(106, 130, 251, 0.1);
+        }
+        .blog-form textarea {
+            resize: vertical;
+            min-height: 200px;
+        }
+        .blog-form button {
+            background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+        .blog-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(106, 130, 251, 0.3);
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 3rem;
+        }
+        .pagination button {
+            background: white;
+            border: 2px solid #e0e4ea;
+            color: #666;
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        .pagination button.active,
+        .pagination button:hover {
+            background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+            color: white;
+            border-color: transparent;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: inherit;
+            box-shadow: 0 2px 12px rgba(106, 130, 251, 0.08);
+        }
+        @media (max-width: 768px) {
+            .blog-hero h1 {
+                font-size: 2.2rem;
+            }
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+            .blog-filters {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">INNOVerse</div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" role="button" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="ideas.html">Ideas</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta-group">
+            <a href="submit.html" class="cta-btn nav-btn">Submit</a>
+            <a href="contact.html" class="cta-btn nav-btn secondary">Join</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <img src="photos/sitelogo.png" alt="ENQUEbet Logo" style="width: 200px; height: auto; margin: 20px auto; display: block;">
+
+        <!-- Hero Section -->
+        <section class="blog-hero">
+            <h1>📰 Blog & Articles: Fuel for Curious Minds</h1>
+            <div class="quote">"Read. Reflect. Reinvent."</div>
+            <p>This blog page is your digital library of ideas, innovations, stories, and insights—created by the community, for the community.</p>
+        </section>
+
+        <!-- Blog Purpose Section -->
+        <section class="blog-purpose">
+            <h2>🎯 Purpose of the Blog Page</h2>
+            <ul>
+                <li>Inspire students and creators through real stories</li>
+                <li>Share tips and resources for project building</li>
+                <li>Document progress of featured club projects</li>
+                <li>Provide updates on tech trends, tools, and innovation challenges</li>
+                <li>Let club members and mentors contribute thought pieces</li>
+            </ul>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="blog-categories">
+            <h2>🧠 Blog Categories</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <h3>🚀 Innovation & Ideas</h3>
+                    <ul>
+                        <li>New problem-solving approaches</li>
+                        <li>Unusual startup ideas</li>
+                        <li>Idea-to-product journeys</li>
+                    </ul>
+                </div>
+                <div class="category-card">
+                    <h3>🔧 Project Diaries</h3>
+                    <ul>
+                        <li>Behind-the-scenes of ongoing student projects</li>
+                        <li>Progress, hurdles, solutions, and photos</li>
+                    </ul>
+                </div>
+                <div class="category-card">
+                    <h3>🛠️ Skill-Building & How-Tos</h3>
+                    <ul>
+                        <li>Tutorials, coding guides, prototyping methods</li>
+                        <li>"How we built it" series</li>
+                    </ul>
+                </div>
+                <div class="category-card">
+                    <h3>🧑‍💻 Tech Talks & Trends</h3>
+                    <ul>
+                        <li>AI, Blockchain, Cybersecurity, etc.</li>
+                        <li>Emerging tools for developers and creators</li>
+                    </ul>
+                </div>
+                <div class="category-card">
+                    <h3>💬 Student Voices</h3>
+                    <ul>
+                        <li>Blog posts by students</li>
+                        <li>Reflections on learning, failing, building</li>
+                    </ul>
+                </div>
+                <div class="category-card">
+                    <h3>📣 Announcements & Highlights</h3>
+                    <ul>
+                        <li>Event summaries</li>
+                        <li>Club achievements</li>
+                        <li>Hackathon experiences</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Articles -->
+        <section class="featured-articles">
+            <h2>⭐ Featured Articles</h2>
+            <div class="featured-grid">
+                <div class="featured-article">
+                    <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113073/smartnavisys_nmzhjk.jpg" alt="Featured Article" class="article-image">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758121840/Screenshot_2025-09-17_204017_agxumh.png" alt="Priya Singh" class="author-avatar">
+                            <div class="author-info">
+                                <div class="author-name">Priya Singh</div>
+                                <div class="article-date">April 25, 2025</div>
+                            </div>
+                        </div>
+                        <h3 class="article-title">How We Built the Smart Campus Navigation App</h3>
+                        <p class="article-excerpt">Discover the journey, challenges, and breakthroughs behind our award-winning AR navigation project for new students. From brainstorming to deployment, see how teamwork made it possible.</p>
+                        <div class="article-tags">
+                            <span class="article-tag">AR/VR</span>
+                            <span class="article-tag">Mobile</span>
+                            <span class="article-tag">Student Project</span>
+                        </div>
+                        <a href="#" class="read-more-btn">Read More →</a>
+                    </div>
+                </div>
+                <div class="featured-article">
+                    <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758121935/thumbnail01_y65zjn.webp" alt="Featured Article" class="article-image">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Rahul Verma" class="author-avatar">
+                            <div class="author-info">
+                                <div class="author-name">Rahul Verma</div>
+                                <div class="article-date">June 15, 2025</div>
+                            </div>
+                        </div>
+                        <h3 class="article-title">AI Bootcamp: What We Learned</h3>
+                        <p class="article-excerpt">Highlights and key takeaways from our hands-on AI and ML workshop for beginners. Includes tips, resources, and student feedback.</p>
+                        <div class="article-tags">
+                            <span class="article-tag">AI/ML</span>
+                            <span class="article-tag">Workshop</span>
+                            <span class="article-tag">Learning</span>
+                </div>
+                        <a href="#" class="read-more-btn">Read More →</a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Filters -->
+        <div class="blog-filters">
+            <button class="filter-btn active" data-category="all">All Posts</button>
+            <button class="filter-btn" data-category="innovation">🚀 Innovation</button>
+            <button class="filter-btn" data-category="projects">🔧 Projects</button>
+            <button class="filter-btn" data-category="tutorials">🛠️ Tutorials</button>
+            <button class="filter-btn" data-category="tech">🧑‍💻 Tech</button>
+            <button class="filter-btn" data-category="voices">💬 Voices</button>
+            <button class="filter-btn" data-category="announcements">📣 News</button>
+        </div>
+
+        <!-- Blog Grid -->
+        <div class="blog-grid" id="blogGrid">
+            <div class="blog-card" data-category="projects">
+                <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113072/hackathonevents_nur0we.jpg" alt="Blog Post">
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758121840/Screenshot_2025-09-17_203940_wxvwqk.png" alt="Anjali Rao" class="author-avatar">
+                        <div class="author-info">
+                            <div class="author-name">Anjali Rao</div>
+                            <div class="article-date">March 30, 2025</div>
+                        </div>
+                    </div>
+                    <h3 class="article-title">Innovation Expo: Student Projects Shine</h3>
+                    <p class="article-excerpt">A look at the most exciting projects and demos from this year's Innovation Expo. Meet the teams and see what inspired their work.</p>
+                    <div class="article-tags">
+                        <span class="article-tag">Events</span>
+                        <span class="article-tag">Showcase</span>
+                    </div>
+                    <a href="#" class="read-more-btn">Read More →</a>
+                </div>
+            </div>
+            <div class="blog-card" data-category="tutorials">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Blog Post">
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <img src="https://randomuser.me/api/portraits/women/48.jpg" alt="Meera Sinha" class="author-avatar">
+                        <div class="author-info">
+                            <div class="author-name">Meera Sinha</div>
+                            <div class="article-date">March 10, 2025</div>
+                        </div>
+                    </div>
+                    <h3 class="article-title">5 Tips for Winning a Hackathon</h3>
+                    <p class="article-excerpt">Our alumni share their secrets to hackathon success and innovation. Learn how to prepare, collaborate, and stand out.</p>
+                    <div class="article-tags">
+                        <span class="article-tag">Hackathon</span>
+                        <span class="article-tag">Tips</span>
+                    </div>
+                    <a href="#" class="read-more-btn">Read More →</a>
+                </div>
+            </div>
+            <div class="blog-card" data-category="innovation">
+                <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758122192/Apple-Vision-Pro-app-experiences-visionOS-home.jpg.large_2x_kmwnda.jpg" alt="Blog Post">
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <img src="https://randomuser.me/api/portraits/men/47.jpg" alt="Arjun Mehta" class="author-avatar">
+                        <div class="author-info">
+                            <div class="author-name">Arjun Mehta</div>
+                            <div class="article-date">February 28, 2024</div>
+                        </div>
+                    </div>
+                    <h3 class="article-title">From Dorm Room to Demo Day: How We Built Our First App</h3>
+                    <p class="article-excerpt">The complete journey of building a mobile app from concept to launch. Lessons learned, challenges faced, and the thrill of success.</p>
+                    <div class="article-tags">
+                        <span class="article-tag">Mobile</span>
+                        <span class="article-tag">Journey</span>
+                    </div>
+                    <a href="#" class="read-more-btn">Read More →</a>
+                </div>
+            </div>
+            <div class="blog-card" data-category="tutorials">
+                <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758122267/images_ioq7pk.jpg" alt="Blog Post">
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758121840/Screenshot_2025-09-17_203916_bpuzmv.png" alt="Vikram Patel" class="author-avatar">
+                        <div class="author-info">
+                            <div class="author-name">Vikram Patel</div>
+                            <div class="article-date">February 15, 2025</div>
+                        </div>
+                    </div>
+                    <h3 class="article-title">5 Tools Every Young Innovator Should Know</h3>
+                    <p class="article-excerpt">Essential tools and platforms that can accelerate your innovation journey. From prototyping to deployment, we've got you covered.</p>
+                    <div class="article-tags">
+                        <span class="article-tag">Tools</span>
+                        <span class="article-tag">Guide</span>
+                    </div>
+                    <a href="#" class="read-more-btn">Read More →</a>
+                </div>
+            </div>
+            <div class="blog-card" data-category="voices">
+                <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758122375/download_s46mfm.png" alt="Blog Post">
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Zara Ahmed" class="author-avatar">
+                        <div class="author-info">
+                            <div class="author-name">Zara Ahmed</div>
+                            <div class="article-date">February 5, 2024</div>
+                        </div>
+                    </div>
+                    <h3 class="article-title">How to Build a Team That Stays Together</h3>
+                    <p class="article-excerpt">Insights on building and maintaining strong teams for long-term projects. Communication, trust, and shared vision.</p>
+                    <div class="article-tags">
+                        <span class="article-tag">Teamwork</span>
+                        <span class="article-tag">Leadership</span>
+                    </div>
+                    <a href="#" class="read-more-btn">Read More →</a>
+                </div>
+            </div>
+            <div class="blog-card" data-category="innovation">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Blog Post">
+                <div class="blog-card-content">
+                    <div class="article-meta">
+                        <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Rohan Kumar" class="author-avatar">
+                        <div class="author-info">
+                            <div class="author-name">Rohan Kumar</div>
+                            <div class="article-date">January 25, 2024</div>
+                        </div>
+                    </div>
+                    <h3 class="article-title">The Power of Asking Why: Rethinking Problems</h3>
+                    <p class="article-excerpt">How asking the right questions can lead to breakthrough solutions. A deep dive into problem-framing techniques.</p>
+                    <div class="article-tags">
+                        <span class="article-tag">Problem Solving</span>
+                        <span class="article-tag">Innovation</span>
+                    </div>
+                    <a href="#" class="read-more-btn">Read More →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>Next →</button>
+        </div>
+
+        <!-- Submit Blog Section -->
+        <section class="submit-blog-section">
+            <h2>✍️ Who Can Contribute?</h2>
+            <p>"Everyone with something to share."</p>
+            <p>Club members • Mentors • Alumni • Guest innovators • Anyone from the larger innovation ecosystem</p>
+            <button class="submit-blog-btn" onclick="toggleBlogForm()">📝 Submit Your Blog</button>
+            
+            <div class="blog-submission-form" id="blogSubmissionForm">
+                <h3>Submit Your Blog Post</h3>
+                <form class="blog-form needs-validation" id="blogForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+                    <input type="hidden" name="access_key" value="1529e866-0edf-4bd2-a677-aa663140b60f" />
+                    <input type="hidden" name="subject" value="New Blog Submission from INNOVerse" />
+                    <input type="checkbox" name="botcheck" id="botcheck" style="display: none;" />
+                    <div class="form-group">
+                        <label for="blogName">Name:</label>
+                        <input type="text" id="blogName" name="blogName" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="blogEmail">Email:</label>
+                        <input type="email" id="blogEmail" name="blogEmail" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="blogTitle">Blog Title:</label>
+                        <input type="text" id="blogTitle" name="blogTitle" placeholder="Give your blog post a catchy title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="blogCategory">Category:</label>
+                        <select id="blogCategory" name="blogCategory" required>
+                            <option value="">Select a category</option>
+                            <option value="innovation">🚀 Innovation & Ideas</option>
+                            <option value="projects">🔧 Project Diaries</option>
+                            <option value="tutorials">🛠️ Skill-Building & How-Tos</option>
+                            <option value="tech">🧑‍💻 Tech Talks & Trends</option>
+                            <option value="voices">💬 Student Voices</option>
+                            <option value="announcements">📣 Announcements & Highlights</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="blogContent">Blog Content:</label>
+                        <textarea id="blogContent" name="blogContent" placeholder="Write your blog post here... (You can also upload a file below)" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="blogFile">Upload Blog File (optional):</label>
+                        <input type="file" id="blogFile" name="blogFile" accept=".doc,.docx,.pdf,.txt">
+                    </div>
+                    <button type="submit">📤 Submit Blog Post</button>
+                </form>
+                <p id="blogResult" class="text-base text-center text-gray-400" style="display:none;"></p>
+            </div>
+        </section>
+    </main>
+    
+<footer class="footer site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="ENQUEbet logo" class="footer-logo">
+        <div>
+          <div class="footer-name" style="font-weight:800; font-size:1.05rem;">ENQUEbet</div>
+          <div class="footer-tagline">Empowering student innovators to build the future.</div>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="submit.html">Join Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+    <p><a href="fluxedustart@gmail.com" style="color:inherit;text-decoration:none;"></a>fluxedustart@gmail.com</p>
+        <p>+91 6302812452</p>
+        <p>ENQUEbet, MRCET, Hyderabad.</p>
+        <div class="footer-socials" style="margin-top:8px;">
+          <a href="https://www.instagram.com/enquebet/#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/enquebet" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="footer-bottom">
+    <div>&copy; <span id="footer-year-index-2">2025</span> ENQUEbet. All Rights Reserved.</div>
+      <div class="legal-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    
+
+<script>
+  (function(){
+    var y = new Date().getFullYear();
+    var el = document.getElementById('footer-year-blog-2'); if (el) el.textContent = y;
+  })();
+</script>
+
+    <script>
+        // Blog filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const category = this.dataset.category;
+                const blogCards = document.querySelectorAll('.blog-card');
+                
+                blogCards.forEach(card => {
+                    if (category === 'all' || card.dataset.category === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Blog submission form toggle
+        function toggleBlogForm() {
+            const form = document.getElementById('blogSubmissionForm');
+            form.style.display = form.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Blog form submission
+        // Blog form submission using Web3Forms
+        (function () {
+            const blogForm = document.getElementById('blogForm');
+            const blogResult = document.getElementById('blogResult');
+
+            // If form exists, attach validation and submit handler
+            if (blogForm) {
+                blogForm.addEventListener('submit', function (e) {
+                    // HTML5 validation
+                    if (!blogForm.checkValidity()) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        blogForm.querySelectorAll(':invalid')[0]?.focus();
+                        blogForm.classList.add('was-validated');
+                        return;
+                    }
+
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    const formData = new FormData(blogForm);
+                    const object = {};
+                    formData.forEach((value, key) => {
+                        // Skip file inputs for JSON submission; web3forms supports file uploads via multipart if needed
+                        if (value instanceof File) return;
+                        object[key] = value;
+                    });
+
+                    const json = JSON.stringify(object);
+
+                    blogResult.style.display = 'block';
+                    blogResult.innerHTML = 'Please wait...';
+
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            Accept: 'application/json',
+                        },
+                        body: json,
+                    })
+                        .then(async (response) => {
+                            let resJson = await response.json();
+                            if (response.status === 200) {
+                                blogResult.innerHTML = resJson.message || 'Message sent successfully.';
+                                blogResult.classList.remove('text-gray-400');
+                                blogResult.classList.add('text-green-500');
+                            } else {
+                                console.log(response);
+                                blogResult.innerHTML = resJson.message || 'An error occurred while sending the message.';
+                                blogResult.classList.remove('text-gray-400');
+                                blogResult.classList.add('text-red-500');
+                            }
+                        })
+                        .catch((error) => {
+                            console.log(error);
+                            blogResult.innerHTML = 'Something went wrong!';
+                        })
+                        .then(function () {
+                            blogForm.reset();
+                            blogForm.classList.remove('was-validated');
+                            setTimeout(() => {
+                                blogResult.style.display = 'none';
+                            }, 5000);
+                        });
+                });
+            }
+        })();
+
+        // Pagination functionality
+        document.querySelectorAll('.pagination button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.pagination button').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                // Here you would typically load new content or navigate to different page
+            });
+        });
+    </script>
+    <script src="navbar.js"></script>
+</body>
+</html>

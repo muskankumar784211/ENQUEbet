@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ENQUEbet Events & Workshops - Upcoming and past events, photo gallery, registration, and feedback.">
+        <meta name="keywords" content="ENQUEbet, Innovation Club,enquebetenquebet startupenquebet innovationsenquebet techenquebet indiaenquebet ideasenquebet seo College, Projects, Events, Collaboration, Students, Technology, Ideasinnovative startup ideas new startup ideas 2025creative business ideasfuture technology startupscutting edge innovationslatest tech startupsemerging business trendsdisruptive startup ideasnext big startup 2025best startup ideas in indiatech innovation platformnew product innovationstop future inventionsunique business ideas💻 Technology & Gadgetslatest technology trendsai powered toolsmachine learning startupsartificial intelligence gadgetssmart home technologyiot innovationsblockchain startup ideaswearable tech trendsrobotics startup ideascloud computing solutionsquantum computing startups🌱 Sustainability & Green Techsustainable startup ideaseco friendly technologygreen energy innovationrenewable energy startupsclean tech solutionsclimate tech startupssolar energy innovationenvironmental business ideas📈 SEO / Digital Growthseo for startupsstartup seo strategyseo tips 2025digital marketing for startupsgrowth hacking ideasonline visibility for startupsbest seo toolskeyword research 2025organic traffic tipscontent marketing strategy🛠️ How-To & Fundinghow to start a tech startuphow to launch a business ideastartup funding tipsinvestors for startupsbusiness plan for innovationraise seed fundingventure capital for tech startups🧠 Creativity & Trendsfuture business opportunitiesinnovative product designtrending app ideasunique product ideascreative inventions 2025future gadgets listnext generation technology">
+
+    <meta name="keywords" content="ENQUEbet, Events, Workshops, Gallery, Registration, Feedback, Innovation Club">
+    <meta name="author" content="ENQUEbet Club">
+    <title>Events & Workshops | ENQUEbet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme-override.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: inherit;
+            box-shadow: 0 2px 12px rgba(106, 130, 251, 0.08);
+        }
+
+        /* Form styling */
+        .register-form .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        .register-form input,
+        .register-form select,
+        .register-form textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        .register-form textarea {
+            margin-bottom: 15px;
+        }
+
+        .register-form .form-group {
+            width: 100%;
+        }
+
+        .register-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .register-form .full-width {
+            grid-column: 1 / -1;
+        }
+
+        .register-form .cta-btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 1.1em;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .register-form .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(106, 130, 251, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">ENQUEbet</div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" role="button" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="ideas.html">Ideas Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta-group">
+            <a href="submit.html" class="cta-btn nav-btn">Submit Idea</a>
+            <a href="contact.html" class="cta-btn nav-btn secondary">Join</a>
+        </div>
+    </nav>
+    <main class="main-content events">
+        <img src="photos/sitelogo.png" alt="ENQUEbet Logo" style="width: 200px; height: auto; margin: 20px auto; display: block;">
+
+        <!-- Hero Section -->
+        <section class="events-hero">
+            <h1>🎉 Events – "Where Innovation Meets Action"</h1>
+            <p class="events-tagline">"Workshops, meetups, hackathons, build sprints, and more – explore, learn, build, repeat."</p>
+            <div class="events-cta">
+                <p>🎯 To showcase past and upcoming events organized by the club. Learn what kind of activities happen here, sign up for upcoming events, and get inspired to participate!</p>
+                <div class="events-cta-buttons">
+                    <a href="#upcoming" class="cta-btn">View Upcoming Events</a>
+                    <a href="#register" class="cta-btn secondary">Register Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Section -->
+        <section id="upcoming" class="upcoming-events">
+            <h2>📅 Upcoming Events</h2>
+            <div class="event-filters">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="workshop">Workshops</button>
+                <button class="filter-btn" data-filter="hackathon">Hackathons</button>
+                <button class="filter-btn" data-filter="talk">Talks</button>
+                <button class="filter-btn" data-filter="team">Team Events</button>
+            </div>
+            <div class="events-grid" id="eventsGrid">
+                <div class="event-card" data-type="workshop">
+                    <div class="event-banner workshop">
+                        <span class="event-type">Workshop</span>
+                        <span class="event-status free">Free</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>AI Bootcamp 2024</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 Oct 10, 2025</span>
+                            <span class="event-time">⏰ 9:00 AM - 5:00 PM</span>
+                            <span class="event-location">📍 Main Auditorium, MRCET</span>
+                        </div>
+                        <p>Join us for a hands-on bootcamp on Artificial Intelligence and Machine Learning. Learn from industry experts, participate in coding challenges, and network with fellow innovators.</p>
+                        <div class="event-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Hands-on</span>
+                            <span class="tag">Networking</span>
+                        </div>
+                        <a href="#register" class="register-btn">Register Now</a>
+                    </div>
+                </div>
+                <div class="event-card" data-type="hackathon">
+                    <div class="event-banner hackathon">
+                        <span class="event-type">Hackathon</span>
+                        <span class="event-status free">Free</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Innovation Expo</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 June 5, 2026</span>
+                            <span class="event-time">⏰ 10:00 AM - 6:00 PM</span>
+                            <span class="event-location">📍 Innovation Center, MRCET</span>
+                        </div>
+                        <p>Showcase your projects to industry experts. Includes live demos, networking, and awards ceremony. Perfect opportunity to get feedback and connect with mentors.</p>
+                        <div class="event-tags">
+                            <span class="tag">Showcase</span>
+                            <span class="tag">Awards</span>
+                            <span class="tag">Networking</span>
+                        </div>
+                        <a href="#register" class="register-btn">Register Now</a>
+                    </div>
+                </div>
+                <div class="event-card" data-type="talk">
+                    <div class="event-banner talk">
+                        <span class="event-type">Talk</span>
+                        <span class="event-status free">Free</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>StartUp 101</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 May 25, 2026</span>
+                            <span class="event-time">⏰ 3:00 PM - 5:00 PM</span>
+                            <span class="event-location">📍 Seminar Hall, MRCET</span>
+                        </div>
+                        <p>Guest speaker session on building a startup from scratch. Learn about ideation, validation, funding, and scaling from successful entrepreneurs.</p>
+                        <div class="event-tags">
+                            <span class="tag">Entrepreneurship</span>
+                            <span class="tag">Guest Speaker</span>
+                            <span class="tag">Q&A</span>
+                        </div>
+                        <a href="#register" class="register-btn">Register Now</a>
+                    </div>
+                </div>
+                <div class="event-card" data-type="team">
+                    <div class="event-banner team">
+                        <span class="event-type">Team Event</span>
+                        <span class="event-status free">Free</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>IdeaStorm</h3>
+                        <div class="event-meta">
+                            <span class="event-date">📅 May 15, 2026</span>
+                            <span class="event-time">⏰ 2:00 PM - 4:00 PM</span>
+                            <span class="event-location">📍 Innovation Lab, MRCET</span>
+                        </div>
+                        <p>Quickfire session to pitch and vote on new ideas. Form teams around promising concepts and start building prototypes together.</p>
+                        <div class="event-tags">
+                            <span class="tag">Ideation</span>
+                            <span class="tag">Team Building</span>
+                            <span class="tag">Prototyping</span>
+                        </div>
+                        <a href="#register" class="register-btn">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flagship Events Section -->
+        <section class="flagship-events">
+            <h2>🚀 Flagship Events</h2>
+            <div class="flagship-grid">
+                <div class="flagship-card">
+                    <div class="flagship-banner">
+                        <span class="flagship-badge">🔥 Featured</span>
+                    </div>
+                    <div class="flagship-content">
+                        <h3>BuildSprint</h3>
+                        <p class="flagship-subtitle">3-day buildathon for new ideas</p>
+                        <p>Our signature event where teams come together for an intensive 3-day buildathon. Turn ideas into working prototypes with mentorship and resources.</p>
+                        <div class="flagship-highlights">
+                            <span>🏆 Prizes worth ₹50,000</span>
+                            <span>👥 100+ participants</span>
+                            <span>🎯 Real-world impact</span>
+                        </div>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="flagship-card">
+                    <div class="flagship-banner">
+                        <span class="flagship-badge">🌟 Annual</span>
+                    </div>
+                    <div class="flagship-content">
+                        <h3>InnoFest</h3>
+                        <p class="flagship-subtitle">Annual innovation showcase & exhibition</p>
+                        <p>The biggest celebration of student innovation. Showcase projects, network with industry leaders, and get inspired by cutting-edge technology.</p>
+                        <div class="flagship-highlights">
+                            <span>🎪 Exhibition stalls</span>
+                            <span>🎤 Expert panels</span>
+                            <span>🏆 Innovation awards</span>
+                        </div>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="flagship-card">
+                    <div class="flagship-banner">
+                        <span class="flagship-badge">💡 Competition</span>
+                    </div>
+                    <div class="flagship-content">
+                        <h3>IdeaPitch</h3>
+                        <p class="flagship-subtitle">Live pitching competition</p>
+                        <p>Present your innovative ideas to a panel of judges including investors, entrepreneurs, and industry experts. Get feedback and potential funding.</p>
+                        <div class="flagship-highlights">
+                            <span>💰 Funding opportunities</span>
+                            <span>🎯 Expert feedback</span>
+                            <span>📈 Mentorship</span>
+                        </div>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Past Event Highlights Section -->
+        <section class="past-events">
+            <h2>📸 Past Event Highlights</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113072/hackathonevents_nur0we.jpg" alt="Hackathon 2025" />
+                    <div class="highlight-content">
+                        <h3>Hackathon 2025</h3>
+                        <p class="highlight-date">April 20, 2025</p>
+                        <p>48-hour coding marathon with 100+ participants and 10+ sponsors. Teams built innovative solutions for real-world problems.</p>
+                        <div class="highlight-stats">
+                            <span>👥 100+ participants</span>
+                            <span>🏆 15 projects</span>
+                            <span>💰 ₹25,000 prizes</span>
+                        </div>
+                        <a href="#" class="view-highlights-btn">View Highlights</a>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113071/roboevents_r4nucp.jpg" alt="Robotics Workshop" />
+                    <div class="highlight-content">
+                        <h3>Robotics Workshop</h3>
+                        <p class="highlight-date">March 15, 2025</p>
+                        <p>Hands-on robotics building and programming session. Participants learned Arduino, sensors, and basic robotics concepts.</p>
+                        <div class="highlight-stats">
+                            <span>🤖 30 robots built</span>
+                            <span>📚 4-hour session</span>
+                            <span>🎯 Beginner friendly</span>
+                        </div>
+                        <a href="#" class="view-highlights-btn">View Highlights</a>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113075/tecktalk_axbdqt.jpg" alt="TechTalks Series" />
+                    <div class="highlight-content">
+                        <h3>TechTalks Series</h3>
+                        <p class="highlight-date">February 2025</p>
+                        <p>Monthly expert sessions featuring alumni and industry professionals. Topics included AI, blockchain, and startup journeys.</p>
+                        <div class="highlight-stats">
+                            <span>🎤 5 speakers</span>
+                            <span>👥 200+ attendees</span>
+                            <span>📺 Live streamed</span>
+                        </div>
+                        <a href="#" class="view-highlights-btn">View Highlights</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Involved Section -->
+        <section class="get-involved">
+            <h2>📬 Get Involved / Suggest an Event</h2>
+            <div class="involved-content">
+                <p class="involved-quote">"Want to host a session? Have an idea for an event?"</p>
+                <p>We welcome community-driven events. If you have something to share, let us know.</p>
+                <div class="involved-buttons">
+                    <a href="submit.html" class="cta-btn">Suggest an Event</a>
+                    <a href="contact.html" class="cta-btn secondary">Partner With Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="register" class="workshop-registration">
+            <h2>📝 Register for Upcoming Events</h2>
+            <form class="register-form needs-validation" id="registerForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+                <input type="hidden" name="access_key" value="1529e866-0edf-4bd2-a677-aa663140b60f" />
+                <input type="hidden" name="subject" value="Event Registration - ENQUEbet" />
+                <input type="checkbox" name="botcheck" id="botcheck" style="display: none;" />
+
+                <div class="  ">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-row">
+                    <select name="event" required>
+                        <option value="">Select Event</option>
+                        <option>AI Bootcamp 2024</option>
+                        <option>Innovation Expo</option>
+                        <option>StartUp 101</option>
+                        <option>IdeaStorm</option>
+                    </select>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number " required/>
+                </div>
+                <textarea name="notes" placeholder="Any special requirements or questions?" rows="3"></textarea>
+                <button type="submit" class="cta-btn">Register Now</button>
+            </form>
+            <p id="registerResult" class="text-base text-center text-gray-400" style="display:none;"></p>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <h2>💬 What Attendees Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="Attendee 1" class="testimonial-photo" />
+                    <div class="testimonial-content">
+                        <strong>Ravi S.</strong>
+                        <p>"The AI Bootcamp was eye-opening and super fun. I learned so much!"</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/women/61.jpg" alt="Attendee 2" class="testimonial-photo" />
+                    <div class="testimonial-content">
+                        <strong>Neha T.</strong>
+                        <p>"Great networking and amazing workshops. Can't wait for the next event!"</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Attendee 3" class="testimonial-photo" />
+                    <div class="testimonial-content">
+                        <strong>Arjun M.</strong>
+                        <p>"The hackathon pushed me to think creatively and work under pressure."</p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Footer -->
+        <section class="events-cta-footer">
+            <h2>📣 Be part of something exciting. Join our next event.</h2>
+            <div class="cta-buttons">
+                <a href="#upcoming" class="cta-btn">View All Events</a>
+                <a href="#register" class="cta-btn secondary">Register Now</a>
+                <a href="contact.html" class="cta-btn secondary">Get Event Updates</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="ENQUEbet logo" class="footer-logo">
+        <div>
+          <div class="footer-name" style="font-weight:800; font-size:1.05rem;">ENQUEbet</div>
+          <div class="footer-tagline">Empowering student innovators to build the future.</div>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="submit.html">Join Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+    <p><a href="fluxedustart@gmail.com" style="color:inherit;text-decoration:none;"></a>fluxedustart@gmail.com</p>
+        <p>+91 6302812452</p>
+        <p>ENQUEbet, MRCET, Hyderabad.</p>
+        <div class="footer-socials" style="margin-top:8px;">
+          <a href="https://www.instagram.com/enquebet/#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/enquebet" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="footer-bottom">
+    <div>&copy; <span id="footer-year-index-2">2025</span> ENQUEbet. All Rights Reserved.</div>
+      <div class="legal-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var y = new Date().getFullYear();
+    var el = document.getElementById('footer-year-events'); if (el) el.textContent = y;
+  })();
+</script>
+    <script>
+        // Event registration form submission using Web3Forms
+        (function () {
+            const form = document.getElementById('registerForm');
+            const result = document.getElementById('registerResult');
+
+            if (!form) return;
+
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    form.querySelectorAll(':invalid')[0]?.focus();
+                    form.classList.add('was-validated');
+                    return;
+                }
+
+                event.preventDefault();
+                event.stopPropagation();
+
+                const formData = new FormData(form);
+                const object = {};
+                formData.forEach((value, key) => {
+                    if (value instanceof File) return;
+                    object[key] = value;
+                });
+
+                result.style.display = 'block';
+                result.innerHTML = 'Please wait...';
+
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        Accept: 'application/json',
+                    },
+                    body: JSON.stringify(object),
+                })
+                    .then(async (response) => {
+                        let resJson = await response.json();
+                        if (response.status === 200) {
+                            result.innerHTML = resJson.message || 'Registered successfully.';
+                            result.classList.remove('text-gray-400');
+                            result.classList.add('text-green-500');
+                        } else {
+                            console.log(response);
+                            result.innerHTML = resJson.message || 'An error occurred while registering.';
+                            result.classList.remove('text-gray-400');
+                            result.classList.add('text-red-500');
+                        }
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                        result.innerHTML = 'Something went wrong!';
+                    })
+                    .then(function () {
+                        form.reset();
+                        form.classList.remove('was-validated');
+                        setTimeout(() => {
+                            result.style.display = 'none';
+                        }, 5000);
+                    });
+            });
+        })();
+    </script>
+    <script src="navbar.js"></script>
+</body>
+</html>

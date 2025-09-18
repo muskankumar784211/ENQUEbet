@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ENQUEbet - Where Ideas Take Off. The official innovation club website for students to propose, showcase, and collaborate on innovative ideas and projects.">
+    <meta name="keywords" content="ENQUEbet, Innovation Club,enquebetenquebet startupenquebet innovationsenquebet techenquebet indiaenquebet ideasenquebet seo College, Projects, Events, Collaboration, Students, Technology, Ideasinnovative startup ideas new startup ideas 2025creative business ideasfuture technology startupscutting edge innovationslatest tech startupsemerging business trendsdisruptive startup ideasnext big startup 2025best startup ideas in indiatech innovation platformnew product innovationstop future inventionsunique business ideas💻 Technology & Gadgetslatest technology trendsai powered toolsmachine learning startupsartificial intelligence gadgetssmart home technologyiot innovationsblockchain startup ideaswearable tech trendsrobotics startup ideascloud computing solutionsquantum computing startups🌱 Sustainability & Green Techsustainable startup ideaseco friendly technologygreen energy innovationrenewable energy startupsclean tech solutionsclimate tech startupssolar energy innovationenvironmental business ideas📈 SEO / Digital Growthseo for startupsstartup seo strategyseo tips 2025digital marketing for startupsgrowth hacking ideasonline visibility for startupsbest seo toolskeyword research 2025organic traffic tipscontent marketing strategy🛠️ How-To & Fundinghow to start a tech startuphow to launch a business ideastartup funding tipsinvestors for startupsbusiness plan for innovationraise seed fundingventure capital for tech startups🧠 Creativity & Trendsfuture business opportunitiesinnovative product designtrending app ideasunique product ideascreative inventions 2025future gadgets listnext generation technology">
+    <meta name="author" content="ENQUEbet Club">
+    <title>ENQUEbet | Where Ideas Take Off</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme-override.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        html { scroll-behavior: smooth; }
+        .fullscreen-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .fullscreen-bg svg {
+            width: 100vw; height: 100vh;
+            object-fit: cover;
+            opacity: 0.18;
+        }
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #fff;
+            text-shadow: 0 4px 32px #6982ff99, 0 2px 8px #fc5c7d99;
+            margin-bottom: 0.5rem;
+        }
+        .hero-sub {
+            font-size: 1.7rem;
+            color: #fff;
+            margin-bottom: 2.2rem;
+            text-shadow: 0 2px 8px #6a82fb55;
+        }
+        .cta-group {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+        }
+        .cta-btn.glow {
+            box-shadow: 0 0 16px 4px #fc5c7d88, 0 0 32px 8px #6a82fb55;
+            animation: glow 2s infinite alternate;
+        }
+        .cta-btn.glow2 {
+            box-shadow: 0 0 16px 4px #6a82fb88, 0 0 32px 8px #fc5c7d55;
+            animation: glow2 2s infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 16px 4px #fc5c7d88, 0 0 32px 8px #6a82fb55; }
+            to { box-shadow: 0 0 32px 12px #fc5c7dcc, 0 0 48px 16px #6a82fb99; }
+        }
+        @keyframes glow2 {
+            from { box-shadow: 0 0 16px 4px #6a82fb88, 0 0 32px 8px #fc5c7d55; }
+            to { box-shadow: 0 0 32px 12px #6a82fbcc, 0 0 48px 16px #fc5c7dcc; }
+        }
+        .quick-intro {
+            margin: 0 auto 2.5rem auto;
+            max-width: 600px;
+            font-size: 1.25rem;
+            color: #222;
+            background: rgba(255,255,255,0.85);
+            border-radius: 14px;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 16px #6a82fb22;
+        }
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            margin-bottom: 3.5rem;
+        }
+        .stat-card {
+            background: rgba(255,255,255,0.92);
+            border-radius: 14px;
+            padding: 1.2rem 2.2rem;
+            box-shadow: 0 2px 16px #6a82fb22;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        .stat-card span {
+            font-size: 2.2rem;
+            margin-bottom: 0.3rem;
+        }
+        .event-highlight {
+            background: rgba(255,255,255,0.93);
+            border-radius: 18px;
+            box-shadow: 0 2px 16px #fc5c7d22;
+            padding: 2.2rem 2rem 2.5rem 2rem;
+            margin: 0 auto 3.5rem auto;
+            max-width: 700px;
+            text-align: center;
+        }
+        .event-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fc5c7d;
+            margin-bottom: 0.7rem;
+        }
+        .event-desc {
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+        }
+        .countdown {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #6a82fb;
+            margin-bottom: 1.2rem;
+        }
+        .carousel-section {
+            margin: 0 auto 3.5rem auto;
+            max-width: 1100px;
+        }
+        .carousel-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #6a82fb;
+            margin-bottom: 1.2rem;
+        }
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            gap: 2rem;
+            padding-bottom: 1rem;
+            scroll-snap-type: x mandatory;
+        }
+        .carousel-card {
+            min-width: 270px;
+            background: rgba(255,255,255,0.97);
+            border-radius: 14px;
+            box-shadow: 0 2px 16px #6a82fb22;
+            padding: 1.2rem 1rem 1rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            scroll-snap-align: start;
+        }
+        .carousel-card img {
+            width: 100%;
+            max-width: 220px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 0.7rem;
+        }
+        .carousel-card h4 {
+            margin: 0.5rem 0 0.2rem 0;
+            font-size: 1.1rem;
+        }
+        .carousel-card p {
+            font-size: 0.98rem;
+            color: #444;
+            margin-bottom: 0.7rem;
+        }
+        .carousel-card a {
+            color: #6a82fb;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .carousel-card a:hover {
+            color: #fc5c7d;
+        }
+        .why-join-section {
+            margin: 0 auto 3.5rem auto;
+            max-width: 1100px;
+        }
+        .why-join-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+             color: #fff;
+            margin-bottom: 1.2rem;
+            text-align: center;
+        }
+        .why-join-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+        }
+        .why-join-card {
+            background: rgba(255,255,255,0.97);
+            border-radius: 14px;
+            box-shadow: 0 2px 16px #6a82fb22;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            font-size: 1.08rem;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .why-join-card span {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-logos {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            margin-bottom: 0.7rem;
+        }
+        .footer-logos img {
+            height: 38px;
+            border-radius: 8px;
+            background: #fff;
+            padding: 2px 6px;
+        }
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 0.7rem;
+        }
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .footer-links a:hover {
+            color: #fc5c7d;
+        }
+        .footer-socials {
+            display: flex;
+            gap: 1.2rem;
+            margin-bottom: 0.7rem;
+        }
+        .footer-socials a {
+            color: #fff;
+            font-size: 1.3rem;
+            transition: color 0.2s;
+        }
+        .footer-socials a:hover {
+            color: #fc5c7d;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: inherit;
+            box-shadow: 0 2px 12px rgba(106, 130, 251, 0.08);
+        }
+        @media (max-width: 700px) {
+            .hero-title { font-size: 2.2rem; }
+            .hero-sub { font-size: 1.1rem; }
+            .main-content { padding: 0.5rem; }
+            .stats-row { flex-direction: column; gap: 1.2rem; }
+            .carousel { gap: 1rem; }
+            .why-join-grid { grid-template-columns: 1fr; }
+        }
+        /* Innovation Hub extra sections - minimal, modern look */
+        .hub-hero { padding: 80px 2rem; color: #fff; text-align: center; background: linear-gradient(135deg, rgba(106,130,251,0.92), rgba(123,58,237,0.92)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat; border-radius: 12px; margin: 2rem 0; }
+        .hub-hero h2 { font-size: 2.6rem; margin: 0 0 .6rem; letter-spacing: -0.02em; }
+        .hub-hero p { font-size: 1.05rem; opacity: 0.95; margin-bottom: 1rem; }
+        .hub-hero .cta-row { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+        .hub-hero .cta-row a { padding:12px 18px; border-radius:8px; text-decoration:none; font-weight:600; }
+        .hub-hero .primary { background: #fff; color:#4a2bff; }
+        .hub-hero .secondary { background: rgba(255,255,255,0.12); color:#fff; border:1px solid rgba(255,255,255,0.14); }
+
+        .hub-section { padding: 48px 2rem; background: transparent; }
+        .hub-wrap { max-width:1200px; margin:0 auto; }
+        .mission-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:center; }
+        .mission-card { background:#fff; padding:20px; border-radius:10px; box-shadow:0 6px 18px rgba(12,18,30,0.06); }
+        .mission-card h3 { margin-top:0; color:#2b2b2b; }
+
+        .projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
+        .project-tile { background:#fff; padding:14px; border-radius:10px; box-shadow:0 6px 18px rgba(12,18,30,0.06); }
+        .project-tile img { width:100%; height:140px; object-fit:cover; border-radius:8px; }
+        .project-meta { display:flex; gap:10px; margin-top:10px; font-size:0.95rem; color:#555; }
+
+        .labs-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; }
+        .lab-card { background:linear-gradient(180deg,#fff,#f7f8fc); padding:14px; border-radius:10px; cursor:pointer; transition:transform .18s ease, box-shadow .18s ease; }
+        .lab-card:hover { transform:translateY(-6px); box-shadow:0 10px 30px rgba(43,43,43,0.08); }
+        .lab-details { display:none; margin-top:10px; font-size:0.95rem; color:#444; }
+
+        .testimonials { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
+        .testimonial { background:linear-gradient(180deg,#ffffff,#fbfbff); padding:18px; border-radius:10px; box-shadow:0 6px 18px rgba(12,18,30,0.05); }
+
+        .partners-row { display:flex; gap:18px; align-items:center; flex-wrap:wrap; justify-content:center; }
+        .partner-logo { width:120px; opacity:0.9; filter:grayscale(0.1); }
+
+        .join-cta { padding:40px 2rem; text-align:center; border-radius:10px; background:linear-gradient(90deg,#6a82fb22,#7b3aed22); }
+        .join-cta h3 { margin:0 0 8px; }
+        .join-cta .cta { display:inline-block; margin-top:12px; padding:12px 18px; border-radius:8px; background:#4a2bff; color:#fff; text-decoration:none; }
+
+        @media (max-width:900px){ .mission-grid { grid-template-columns:1fr; } .hub-hero h2{font-size:1.9rem;} }
+    </style>
+</head>
+<body>
+    <div class="fullscreen-bg">
+        <!-- SVG Tech Animation Background -->
+        <svg viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.7">
+                <circle cx="300" cy="200" r="120" stroke="#6a82fb" stroke-width="4" />
+                <circle cx="1600" cy="900" r="90" stroke="#fc5c7d" stroke-width="4" />
+                <rect x="900" y="100" width="200" height="200" rx="40" stroke="#43cea2" stroke-width="4" />
+                <rect x="1400" y="400" width="120" height="120" rx="30" stroke="#185a9d" stroke-width="4" />
+                <path d="M0 800 Q960 200 1920 800" stroke="#6a82fb" stroke-width="3" fill="none" />
+                <path d="M0 900 Q960 400 1920 900" stroke="#fc5c7d" stroke-width="3" fill="none" />
+                <g>
+                    <circle cx="600" cy="700" r="8" fill="#43cea2" />
+                    <circle cx="800" cy="300" r="8" fill="#fc5c7d" />
+                    <circle cx="1200" cy="600" r="8" fill="#6a82fb" />
+                    <circle cx="1700" cy="200" r="8" fill="#185a9d" />
+                </g>
+            </g>
+        </svg>
+    </div>
+    <nav class="navbar">
+        <div class="nav-logo">ENQUEbet</div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="main-content" style="background:transparent;box-shadow:none;max-width:100vw;padding:0;">
+        <section class="hero-section" data-aos="fade-up">
+        <img src="photos/sitelogo.png" alt="ENQUEbet Logo" style="width: 300px; height: auto; margin-bottom: 20px;">
+        <div class="hero-title">ENQUEbet</div>
+            <div class="hero-sub">Where Ideas Take Off 🚀</div>
+            <div class="cta-group">
+                <a href="submit.html" class="cta-btn glow">🚀 Submit Your Idea</a>
+                <a href="contact.html" class="cta-btn glow2">👥 Join the Club</a>
+            </div>
+            <div style="margin-top: 20px;">
+                <a href="centerofcollab.html" class="cta-btn glow2">👥 Center Of Collab</a>
+            </div>
+        </section>
+        <section class="quick-intro" data-aos="fade-up" data-aos-delay="100">
+            We are a community of creators, coders, thinkers, and dreamers, shaping the future one innovation at a time.
+        </section>
+        <div class="stats-row" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-card"><span>💡</span>100+ Ideas Submitted</div>
+            <div class="stat-card"><span>🛠️</span>10+ Projects Built</div>
+            <div class="stat-card"><span>🏆</span>5+ Awards Won</div>
+        </div>
+        <section class="event-highlight" data-aos="fade-up" data-aos-delay="300">
+            <div class="event-title">🚨 Next Big Thing</div>
+            <div class="event-desc">AI Bootcamp – Oct 10, 2025<br>Hands-on sessions on AI and ML for beginners.</div>
+            <div class="countdown" id="countdown"></div>
+            <a href="events.html" class="cta-btn">Register Now</a>
+        </section>
+        <section class="carousel-section" data-aos="fade-up" data-aos-delay="400">
+            <div class="carousel-title">🎯 Project Spotlight</div>
+            <div class="carousel" id="project-carousel">
+                <div class="carousel-card">
+                    <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758116555/smart-campus-management-system-500x500_ndj2fs.webp" alt="Project 1" />
+                    <h4>Smart Campus Navigation</h4>
+                    <p>AR app to help new students find their way on campus.</p>
+                    <a href="projects.html">View More</a>
+                </div>
+                <div class="carousel-card">
+                    <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113070/naturaleoisk_xkhwz5.jpg" alt="Project 2" />
+                    <h4>Green Energy Kiosk</h4>
+                    <p>Solar-powered charging stations for students' devices.</p>
+                    <a href="projects.html">View More</a>
+                </div>
+                <div class="carousel-card">
+                    <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113072/smartattendance_dfnmqj.jpg" alt="Project 3" />
+                    <h4>AI Attendance System</h4>
+                    <p>Facial recognition-based attendance for classrooms.</p>
+                    <a href="projects.html">View More</a>
+                </div>
+                <div class="carousel-card">
+                    <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113071/opensourcedashboard_pash57.png" alt="Project 4" />
+                    <h4>Open Source Dashboard</h4>
+                    <p>Monitor and visualize campus energy usage.</p>
+                    <a href="projects.html">View More</a>
+                </div>
+            </div>
+        </section>
+        <!-- Discover More Section -->
+        <section class="discover-section" data-aos="fade-up" data-aos-delay="150">
+          <h2 class="discover-title">Discover More</h2>
+          <div class="discover-grid">
+            <div class="discover-card">
+              <h3>Achievements & Recognition</h3>
+              <p>See our club’s awards, patents, research, and hackathon wins. Celebrate our impact and success!</p>
+              <a href="achievements.html" class="discover-link">Explore Achievements</a>
+            </div>
+            <div class="discover-card">
+              <h3>Blog & Articles</h3>
+              <p>Read student writeups, research, tech trends, and innovation stories from our vibrant community.</p>
+              <a href="blog.html" class="discover-link">Read the Blog</a>
+            </div>
+            <div class="discover-card">
+              <h3>Collaboration Hub</h3>
+              <p>Connect with other clubs, join open source projects, and find opportunities to collaborate on campus-wide innovation.</p>
+              <a href="collab.html" class="discover-link">Go to Collaboration Hub</a>
+            </div>
+            <div class="discover-card">
+              <h3>Ideas Gallery</h3>
+              <p>Browse submitted ideas from students. Get inspired and see the diversity of innovation in our club.</p>
+              <a href="ideas.html" class="discover-link">View Ideas Gallery</a>
+            </div>
+            <div class="discover-card">
+              <h3>Team & Mentors</h3>
+              <p>Meet the core team, alumni innovators, and faculty mentors who make our club thrive.</p>
+              <a href="team.html" class="discover-link">Meet the Team</a>
+            </div>
+          </div>
+        </section>
+        <section class="why-join-section" data-aos="fade-up" data-aos-delay="500">
+            <div class="why-join-title">🌍 Why Join Inno Club?</div>
+            <div class="why-join-grid">
+                <div class="why-join-card"><span>🤝</span>Collaborate with peers</div>
+                <div class="why-join-card"><span>🧠</span>Build real-world projects</div>
+                <div class="why-join-card"><span>🎤</span>Attend exclusive sessions</div>
+                <div class="why-join-card"><span>🔬</span>Get mentorship & research support</div>
+                <div class="why-join-card"><span>💼</span>Boost your resume</div>
+            </div>
+        </section>
+
+        <!-- New: Innovation Hub Extended Sections (added) -->
+        <style>
+        /* Innovation Hub extra sections - minimal, modern look */
+        .hub-hero { padding: 80px 2rem; color: #fff; text-align: center; background: linear-gradient(135deg, rgba(106,130,251,0.92), rgba(123,58,237,0.92)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat; border-radius: 12px; margin: 2rem 0; }
+        .hub-hero h2 { font-size: 2.6rem; margin: 0 0 .6rem; letter-spacing: -0.02em; }
+        .hub-hero p { font-size: 1.05rem; opacity: 0.95; margin-bottom: 1rem; }
+        .hub-hero .cta-row { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+        .hub-hero .cta-row a { padding:12px 18px; border-radius:8px; text-decoration:none; font-weight:600; }
+        .hub-hero .primary { background: #fff; color:#4a2bff; }
+        .hub-hero .secondary { background: rgba(255,255,255,0.12); color:#fff; border:1px solid rgba(255,255,255,0.14); }
+
+        .hub-section { padding: 48px 2rem; background: transparent; }
+        .hub-wrap { max-width:1200px; margin:0 auto; }
+        .mission-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:center; }
+        .mission-card { background:#fff; padding:20px; border-radius:10px; box-shadow:0 6px 18px rgba(12,18,30,0.06); }
+        .mission-card h3 { margin-top:0; color:#2b2b2b; }
+
+        .projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; }
+        .project-tile { background:#fff; padding:14px; border-radius:10px; box-shadow:0 6px 18px rgba(12,18,30,0.06); }
+        .project-tile img { width:100%; height:140px; object-fit:cover; border-radius:8px; }
+        .project-meta { display:flex; gap:10px; margin-top:10px; font-size:0.95rem; color:#555; }
+
+        .labs-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; }
+        .lab-card { background:linear-gradient(180deg,#fff,#f7f8fc); padding:14px; border-radius:10px; cursor:pointer; transition:transform .18s ease, box-shadow .18s ease; }
+        .lab-card:hover { transform:translateY(-6px); box-shadow:0 10px 30px rgba(43,43,43,0.08); }
+        .lab-details { display:none; margin-top:10px; font-size:0.95rem; color:#444; }
+
+        .testimonials { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; }
+        .testimonial { background:linear-gradient(180deg,#ffffff,#fbfbff); padding:18px; border-radius:10px; box-shadow:0 6px 18px rgba(12,18,30,0.05); }
+
+        .partners-row { display:flex; gap:18px; align-items:center; flex-wrap:wrap; justify-content:center; }
+        .partner-logo { width:120px; opacity:0.9; filter:grayscale(0.1); }
+
+        .join-cta { padding:40px 2rem; text-align:center; border-radius:10px; background:linear-gradient(90deg,#6a82fb22,#7b3aed22); }
+        .join-cta h3 { margin:0 0 8px; }
+        .join-cta .cta { display:inline-block; margin-top:12px; padding:12px 18px; border-radius:8px; background:#4a2bff; color:#fff; text-decoration:none; }
+
+        @media (max-width:900px){ .mission-grid { grid-template-columns:1fr; } .hub-hero h2{font-size:1.9rem;} }
+        </style>
+
+        <section class="hub-hero" data-aos="zoom-in">
+            <div class="hub-wrap">
+                <h2 style="font-weight:800;line-height:1.05">INNOVATION HUB — Launch. Learn. Lead.</h2>
+                <p style="max-width:900px;margin:0 auto 18px;opacity:0.95">A trusted, student-first hub uniting learners, researchers, and industry. We provide world-class labs, mentorship, and startup support to turn ambitious ideas into real products and social impact.</p>
+                <div style="display:flex;gap:14px;justify-content:center;margin-bottom:18px;flex-wrap:wrap;">
+                    <div style="background:rgba(255,255,255,0.12);padding:10px 14px;border-radius:10px;font-weight:700">Trusted by 50+ Partners</div>
+                    <div style="background:rgba(255,255,255,0.12);padding:10px 14px;border-radius:10px;font-weight:700">1,200+ Students</div>
+                    <div style="background:rgba(255,255,255,0.12);padding:10px 14px;border-radius:10px;font-weight:700">10+ Projects</div>
+                </div>
+                <div class="cta-row">
+                    <a href="submit.html" class="primary">🚀 Submit Your Idea</a>
+                    <a href="contact.html" class="secondary">🤝 Partner With Us</a>
+                </div>
+             </div>
+         </section>
+ 
+         <section class="hub-section" data-aos="fade-up">
+             <div class="hub-wrap">
+                 <div class="mission-grid">
+                     <div class="mission-card">
+                         <h3>Our Mission</h3>
+                        <p>We accelerate student innovation by providing the tools, mentorship, and network needed to build prototypes, validate ideas, and scale impact—across campus and into the market.</p>
+                         <ul>
+                             <li>Provide hands-on lab access and workshops</li>
+                             <li>Connect learners with mentors and industry</li>
+                             <li>Foster multidisciplinary teams and projects</li>
+                         </ul>
+                     </div>
+                     <div class="mission-card">
+                         <h3>Our Vision</h3>
+                        <p>To be the premier launchpad where education and entrepreneurship meet, creating sustainable startups and leaders who solve real problems.</p>
+                        <p><strong>Impact Goals:</strong> Launch 100+ student projects annually, incubate 20 startups, and deliver 200+ mentorship hours per semester.</p>
+                     </div>
+                 </div>
+             </div>
+         </section>
+ 
+         <section class="hub-section" data-aos="fade-up">
+             <div class="hub-wrap">
+                 <h3>Featured Projects & Success Stories</h3>
+                 <div class="projects-grid">
+                    <div class="project-tile" data-aos="fade-up">
+                        <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758116555/smart-campus-management-system-500x500_ndj2fs.webp" alt="Smart Campus" />
+                        <h4>Smart Campus Navigation</h4>
+                        <p class="project-meta">AR-guided navigation app that helped 1,200 students find campus locations effortlessly. Mentored, prototyped, and tested on campus.</p>
+                    </div>
+                    <div class="project-tile" data-aos="fade-up" data-aos-delay="80">
+                        <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113070/naturaleoisk_xkhwz5.jpg" alt="Green Energy" />
+                        <h4>Green Energy Kiosk</h4>
+                        <p class="project-meta">Solar charging kiosks deployed in 3 campus zones — reduced peak energy draw and provided free charging during events.</p>
+                    </div>
+                    <div class="project-tile" data-aos="fade-up" data-aos-delay="160">
+                        <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113072/smartattendance_dfnmqj.jpg" alt="AI Attendance" />
+                        <h4>AI Attendance System</h4>
+                        <p class="project-meta">Faculty-backed facial-detection attendance tool that cut record-keeping time by 40% and integrated with LMS for reporting.</p>
+                    </div>
+                    <div class="project-tile" data-aos="fade-up" data-aos-delay="240">
+                        <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113071/opensourcedashboard_pash57.png" alt="Open Source Dashboard" />
+                        <h4>Open Source Dashboard</h4>
+                        <p class="project-meta">A campus energy dashboard used by facility managers to reduce waste and improve sustainability across buildings.</p>
+                    </div>
+                 </div>
+             </div>
+         </section>
+ 
+         <section class="hub-section" data-aos="fade-up">
+             <div class="hub-wrap">
+                 <h3>Labs & Resources — Explore</h3>
+                 <p style="color:#555;">Click a lab to learn more about equipment, workshops, and reservation details.</p>
+                 <div class="labs-grid" id="labsGrid">
+                    <div class="lab-card" data-lab="ai">
+                        <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113070/aimllab_mmb36t.jpg" alt="AI lab" style="width:100%;height:110px;object-fit:cover;border-radius:8px;margin-bottom:10px;">
+                        <strong>AI & ML Lab</strong>
+                        <div class="lab-details">High-performance GPUs, shared datasets, weekly mentorship sessions, and guided capstone sprints.</div>
+                    </div>
+                    <div class="lab-card" data-lab="iot">
+                        <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113074/iotlab_mn4py5.jpg" alt="IoT lab" style="width:100%;height:110px;object-fit:cover;border-radius:8px;margin-bottom:10px;">
+                        <strong>IoT & Hardware Lab</strong>
+                        <div class="lab-details">Sensors, microcontrollers, 3D printers, and prototyping benches with hands-on prototyping workshops.</div>
+                    </div>
+                    <div class="lab-card" data-lab="design">
+                        <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113072/designlab_ujebww.jpg" alt="Design studio" style="width:100%;height:110px;object-fit:cover;border-radius:8px;margin-bottom:10px;">
+                        <strong>Design Studio</strong>
+                        <div class="lab-details">UX/UI tools, rapid prototyping kits, user testing rooms, and design-thinking workshops.</div>
+                    </div>
+                    <div class="lab-card" data-lab="biz">
+                        <img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113075/startup_fujqbn.jpg" alt="Startup support" style="width:100%;height:110px;object-fit:cover;border-radius:8px;margin-bottom:10px;">
+                        <strong>Startup Support</strong>
+                        <div class="lab-details">Founder office hours, investor-ready pitch coaching, legal templates, and go-to-market guidance.</div>
+                    </div>
+                 </div>
+             </div>
+         </section>
+ 
+         <section class="hub-section" data-aos="fade-up">
+             <div class="hub-wrap">
+                 <h3>Student & Faculty Testimonials</h3>
+                 <div class="testimonials">
+                    <div class="testimonial">
+                        <div style="display:flex;align-items:center;gap:12px"><img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113074/student2_dlvo8h.jpg" alt="Priya" style="width:56px;height:56px;border-radius:50%"><div><strong>Nitin — CS Student</strong><div style="font-size:0.95rem;color:#666">"Inno Club helped me turn a concept into a funded prototype. The mentorship and lab access were decisive."</div></div></div>
+                    </div>
+                    <div class="testimonial">
+                        <div style="display:flex;align-items:center;gap:12px"><img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758114199/e6b852ed-7d22-44fd-8c87-dbe609725d08_cwxtdi.jpg" alt="Dr Mehta" style="width:56px;height:56px;border-radius:50%"><div><strong>Mr. K Suresh — Faculty Mentor</strong><div style="font-size:0.95rem;color:#666">"Student projects are consistently professional and impact-driven; our research finds a path to practice here."</div></div></div>
+                    </div>
+                    <div class="testimonial">
+                        <div style="display:flex;align-items:center;gap:12px"><img src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113074/student1_hahkfd.jpg" alt="Rahul" style="width:56px;height:56px;border-radius:50%"><div><strong>Rahul — Member</strong><div style="font-size:0.95rem;color:#666">"We hired two interns from the club who became key hires — the talent pipeline here is exceptional."</div></div></div>
+                    </div>
+                 </div>
+             </div>
+         </section>
+ 
+         <section class="hub-section" data-aos="fade-up">
+             <div class="hub-wrap">
+                 <h3>Upcoming Events</h3>
+                 <ul>
+                     <li><strong>AI Bootcamp</strong> — Nov 10, 2025 · Hands-on sessions and challenges. <a href="events.html">Register</a></li>
+                     <li><strong>Startup Sprint</strong> — Dec 15, 2025 · 48-hour build + mentor hours. <a href="events.html">Learn more</a></li>
+                     <li><strong>Design Jam</strong> — Jan 9, 2026 · Rapid prototyping workshops. <a href="events.html">Sign up</a></li>
+                 </ul>
+             </div>
+         </section>
+ 
+         <section class="hub-section" data-aos="fade-up">
+             <div class="hub-wrap" style="text-align:center;">
+                 <h3>Industry & Academic Collaborations</h3>
+                 <div class="partners-row">
+                    
+                    <img class="partner-logo" src="https://res.cloudinary.com/ddex00tns/image/upload/v1758113073/mrcetlogo_kd26eh.jpg" alt="Partner 4"/>
+                 </div>
+             </div>
+         </section>
+ 
+         <section class="join-cta" data-aos="fade-up">
+             <div class="hub-wrap">
+                 <h3>Ready to build with us?</h3>
+                 <p>Students, educators, and partners — there’s a place for you in the Innovation Hub. Collaborate, learn, and launch.</p>
+                 <a class="cta" href="submit.html">Join & Submit an Idea</a>
+             </div>
+         </section>
+
+        <script>
+            // labs: toggle details on click
+            document.addEventListener('DOMContentLoaded', function(){
+                document.querySelectorAll('.lab-card').forEach(card => {
+                    card.addEventListener('click', function(){
+                        const details = this.querySelector('.lab-details');
+                        if (!details) return;
+                        const open = details.style.display === 'block';
+                        document.querySelectorAll('.lab-details').forEach(d => d.style.display = 'none');
+                        details.style.display = open ? 'none' : 'block';
+                    });
+                });
+
+                // simple counter animation for hero badges (if present)
+                const counters = document.querySelectorAll('[data-counter]');
+                counters.forEach(el => {
+                    const target = parseInt(el.getAttribute('data-counter'),10) || 0;
+                    let current = 0;
+                    const step = Math.max(1, Math.floor(target/60));
+                    const iv = setInterval(()=>{
+                        current += step;
+                        if (current >= target) { el.textContent = target + (el.getAttribute('data-plus')?'+':''); clearInterval(iv); }
+                        else el.textContent = current;
+                    },16);
+                });
+            });
+        </script>
+    </main>
+    <footer class="footer site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="ENQUEbet logo" class="footer-logo">
+        <div>
+          <div class="footer-name" style="font-weight:800; font-size:1.05rem;">ENQUEbet</div>
+          <div class="footer-tagline">Empowering student innovators to build the future.</div>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="submit.html">Join Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+    <p><a href="fluxedustart@gmail.com" style="color:inherit;text-decoration:none;"></a>fluxedustart@gmail.com</p>
+        <p>+91 6302812452</p>
+        <p>ENQUEbet, MRCET, Hyderabad.</p>
+        <div class="footer-socials" style="margin-top:8px;">
+          <a href="https://www.instagram.com/enquebet/#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/enquebet" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="footer-bottom">
+    <div>&copy; <span id="footer-year-index-2">2025</span> ENQUEbet. All Rights Reserved.</div>
+      <div class="legal-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var y = new Date().getFullYear();
+    var el = document.getElementById('footer-year-index-2'); if (el) el.textContent = y;
+  })();
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({ duration: 900, once: true });
+        
+
+        
+        // Countdown Timer
+        function updateCountdown() {
+            const eventDate = new Date('2024-05-10T09:00:00');
+            const now = new Date();
+            const diff = eventDate - now;
+            if (diff <= 0) {
+                document.getElementById('countdown').textContent = 'Event Started!';
+                return;
+            }
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const mins = Math.floor((diff / (1000 * 60)) % 60);
+            const secs = Math.floor((diff / 1000) % 60);
+            document.getElementById('countdown').textContent = `${days}d ${hours}h ${mins}m ${secs}s`;
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+    <script src="navbar.js"></script>
+</body>
+</html>

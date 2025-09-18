@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤝 Collaboration Hub | INNOVerse</title>
+    <meta name="description" content="INNOVerse Collaboration Hub - Let's Build the Future Together. Connect with innovators, mentors, and organizations to create impactful solutions.">
+    <meta name="keywords" content="ENQUEbet, Innovation Club,enquebetenquebet startupenquebet innovationsenquebet techenquebet indiaenquebet ideasenquebet seo College, Projects, Events, Collaboration, Students, Technology, Ideasinnovative startup ideas new startup ideas 2025creative business ideasfuture technology startupscutting edge innovationslatest tech startupsemerging business trendsdisruptive startup ideasnext big startup 2025best startup ideas in indiatech innovation platformnew product innovationstop future inventionsunique business ideas💻 Technology & Gadgetslatest technology trendsai powered toolsmachine learning startupsartificial intelligence gadgetssmart home technologyiot innovationsblockchain startup ideaswearable tech trendsrobotics startup ideascloud computing solutionsquantum computing startups🌱 Sustainability & Green Techsustainable startup ideaseco friendly technologygreen energy innovationrenewable energy startupsclean tech solutionsclimate tech startupssolar energy innovationenvironmental business ideas📈 SEO / Digital Growthseo for startupsstartup seo strategyseo tips 2025digital marketing for startupsgrowth hacking ideasonline visibility for startupsbest seo toolskeyword research 2025organic traffic tipscontent marketing strategy🛠️ How-To & Fundinghow to start a tech startuphow to launch a business ideastartup funding tipsinvestors for startupsbusiness plan for innovationraise seed fundingventure capital for tech startups🧠 Creativity & Trendsfuture business opportunitiesinnovative product designtrending app ideasunique product ideascreative inventions 2025future gadgets listnext generation technology">
+    <meta name="keywords" content="INNOVerse, Collaboration, Innovation, Partnerships, Mentorship, Open Source, Student Projects">
+    <meta name="author" content="INNOVerse Club">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme-override.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        .collab-hero {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+        .collab-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: #6a82fb;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 8px rgba(106, 130, 251, 0.2);
+        }
+        .collab-hero .quote {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #fc5c7d;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        .collab-hero .quote-author {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .collab-hero p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        .why-collab {
+            background: linear-gradient(135deg, #f8f9ff 0%, #fff5f7 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border-left: 4px solid #6a82fb;
+        }
+        .why-collab h2 {
+            color: #6a82fb;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .collab-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .benefit-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(106, 130, 251, 0.1);
+            transition: transform 0.3s;
+        }
+        .benefit-item:hover {
+            transform: translateY(-3px);
+        }
+        .benefit-icon {
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
+            color: #fc5c7d;
+        }
+        .benefit-title {
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .benefit-desc {
+            color: #666;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+        .collab-types {
+            margin-bottom: 4rem;
+        }
+        .collab-types h2 {
+            color: #6a82fb;
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .type-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(106, 130, 251, 0.1);
+            transition: transform 0.3s;
+        }
+        .type-card:hover {
+            transform: translateY(-5px);
+        }
+        .type-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #fc5c7d;
+        }
+        .type-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .type-list {
+            list-style: none;
+            padding: 0;
+        }
+        .type-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #555;
+            line-height: 1.4;
+        }
+        .type-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #6a82fb;
+            font-weight: bold;
+        }
+        .current-collabs {
+            background: linear-gradient(135deg, #fff5f7 0%, #f8f9ff 100%);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+        .current-collabs h2 {
+            color: #fc5c7d;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .current-collabs .note {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+        .collab-examples {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 12px rgba(106, 130, 251, 0.1);
+        }
+        .example-item {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: #f8f9ff;
+            border-radius: 8px;
+            border-left: 4px solid #6a82fb;
+        }
+        .example-item:last-child {
+            margin-bottom: 0;
+        }
+        .collab-form-section {
+            margin-bottom: 3rem;
+        }
+        .collab-form-section h2 {
+            color: #6a82fb;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .collab-form-section p {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        .collab-form {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(106, 130, 251, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .collab-form h3 {
+            color: #6a82fb;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .collab-form .form-group {
+            margin-bottom: 1.5rem;
+            width: 100%;
+        }
+        .collab-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+            font-size: 0.95rem;
+        }
+        .collab-form input,
+        .collab-form select,
+        .collab-form textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e0e4ea;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            font-family: inherit;
+            background: #fff;
+        }
+        .collab-form input:focus,
+        .collab-form select:focus,
+        .collab-form textarea:focus {
+            outline: none;
+            border-color: #6a82fb;
+            box-shadow: 0 0 0 3px rgba(106, 130, 251, 0.1);
+        }
+        .collab-form textarea {
+            resize: vertical;
+            min-height: 120px;
+            line-height: 1.5;
+        }
+        .collab-form select {
+            cursor: pointer;
+        }
+        .collab-form button {
+            background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .collab-form button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(106, 130, 251, 0.3);
+        }
+        .collab-form button:active {
+            transform: translateY(0);
+        }
+        .cta-section {
+            background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .cta-btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .cta-btn-secondary:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+                 @media (max-width: 768px) {
+             .collab-hero h1 {
+                 font-size: 2.2rem;
+             }
+             .collab-benefits {
+                 grid-template-columns: 1fr;
+             }
+             .types-grid {
+                 grid-template-columns: 1fr;
+             }
+             .collab-form {
+                 padding: 1.5rem;
+                 margin: 1rem;
+             }
+             .collab-form input,
+             .collab-form select,
+             .collab-form textarea {
+                 padding: 0.8rem;
+                 font-size: 16px;
+             }
+             .collab-form button {
+                 padding: 1rem 1.5rem;
+             }
+             .cta-buttons {
+                 flex-direction: column;
+                 align-items: center;
+             }
+             .cta-btn-secondary {
+                 width: 100%;
+                 max-width: 300px;
+                 text-align: center;
+             }
+             /* Navigation responsive fixes */
+             .navbar {
+                 padding: 0.5rem 1rem;
+             }
+             .nav-links {
+                 gap: 0.8rem;
+                 flex-wrap: wrap;
+                 justify-content: center;
+             }
+             .nav-links li a {
+                 font-size: 0.9rem;
+                 padding: 0.5rem 0.8rem;
+             }
+             .nav-cta-group {
+                 gap: 0.5rem;
+             }
+             .nav-cta-group .cta-btn {
+                 padding: 0.5rem 1rem;
+                 font-size: 0.9rem;
+             }
+         }
+         
+         @media (max-width: 480px) {
+             .nav-links {
+                 gap: 0.5rem;
+             }
+             .nav-links li a {
+                 font-size: 0.8rem;
+                 padding: 0.4rem 0.6rem;
+             }
+             .nav-cta-group .cta-btn {
+                 padding: 0.4rem 0.8rem;
+                 font-size: 0.8rem;
+             }
+         }
+
+         .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: inherit;
+    box-shadow: 0 2px 12px rgba(106, 130, 251, 0.08);
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">INNOVerse</div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" role="button" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="ideas.html">Ideas</a></li>
+            
+            
+            <li><a href="collab.html" class="active">Collaborate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta-group">
+            <a href="submit.html" class="cta-btn nav-btn">Submit</a>
+            <a href="contact.html" class="cta-btn nav-btn secondary">Join</a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <img src="photos/sitelogo.png" alt="ENQUEbet Logo" style="width: 200px; height: auto; margin: 20px auto; display: block;">
+
+        <!-- Hero Section -->
+        <section class="collab-hero">
+            <h1>🤝 Collaboration Hub: Let's Build the Future Together</h1>
+            <div class="quote">"Alone we can do so little; together we can do so much."</div>
+            <div class="quote-author">— Helen Keller</div>
+            <p>The Innovation Club is an open community for creators, engineers, designers, entrepreneurs, and educators. Collaboration is at the heart of everything we do — and we're always looking for people and organizations who share the same vision.</p>
+        </section>
+
+        <!-- Why Collaborate Section -->
+        <section class="why-collab">
+            <h2>💡 Why Collaborate With Us?</h2>
+            <div class="collab-benefits">
+                <div class="benefit-item">
+                    <div class="benefit-icon">💥</div>
+                    <div class="benefit-title">Access Talent</div>
+                    <div class="benefit-desc">Work with passionate and skilled students, early-stage innovators, and creators.</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🧪</div>
+                    <div class="benefit-title">Co-create Solutions</div>
+                    <div class="benefit-desc">Build real projects in fields like tech, sustainability, AI, design, and more.</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🏢</div>
+                    <div class="benefit-title">Institutional Synergy</div>
+                    <div class="benefit-desc">Partner on events, idea challenges, training programs, or research.</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🎤</div>
+                    <div class="benefit-title">Mentor or Speak</div>
+                    <div class="benefit-desc">Share your expertise through mentorship sessions or talks.</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🚀</div>
+                    <div class="benefit-title">Innovation to Market</div>
+                    <div class="benefit-desc">Help us incubate and launch student-led innovations.</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🌍</div>
+                    <div class="benefit-title">Build a Network</div>
+                    <div class="benefit-desc">Be part of a collaborative, diverse, and future-focused innovation ecosystem.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Types of Collaborations -->
+        <section class="collab-types">
+            <h2>🧱 Types of Collaborations</h2>
+            <div class="types-grid">
+                <div class="type-card">
+                    <div class="type-icon">🏫</div>
+                    <div class="type-title">Academic Institutions</div>
+                    <ul class="type-list">
+                        <li>Joint hackathons or innovation events</li>
+                        <li>Exchange programs or guest lectures</li>
+                        <li>Student project mentorship and evaluation</li>
+                    </ul>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">🏢</div>
+                    <div class="type-title">Companies & Startups</div>
+                    <ul class="type-list">
+                        <li>Real-world problem statements for students</li>
+                        <li>Co-branded challenges or case study competitions</li>
+                        <li>Hiring or internship partnerships</li>
+                    </ul>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">🎓</div>
+                    <div class="type-title">Mentors & Experts</div>
+                    <ul class="type-list">
+                        <li>1:1 mentoring or group sessions</li>
+                        <li>Workshops or technical bootcamps</li>
+                        <li>Advisory roles in student projects</li>
+                    </ul>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon">🧑‍🔬</div>
+                    <div class="type-title">Innovators & Teams</div>
+                    <ul class="type-list">
+                        <li>Submit ideas for joint development</li>
+                        <li>Join open-source innovation projects</li>
+                        <li>Collaborate on R&D, prototyping, or go-to-market strategy</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Collaborations -->
+        <section class="current-collabs">
+            <h2>🌐 Current Collaborations</h2>
+            <div class="note">(You can list existing institutions, startups, or mentors here if available. Otherwise leave this for future updates.)</div>
+            <div class="collab-examples">
+                <div class="example-item">
+                    <strong>🔹 ABC Tech Pvt Ltd</strong> – Hosted "AI for Good" Hackathon
+                </div>
+                <div class="example-item">
+                    <strong>🔹 Dr. R. Sharma</strong> – Mentored our Smart Traffic Light IoT Project
+                </div>
+                <div class="example-item">
+                    <strong>🔹 XYZ University</strong> – Joint webinar on Sustainable Innovation
+                </div>
+            </div>
+        </section>
+
+        <!-- Collaboration Form Section -->
+        <section class="collab-form-section">
+            <h2>📝 Interested in Collaborating?</h2>
+            <p>We'd love to hear from you! Whether you're an individual, a team, or a representative of an organization — if you're passionate about innovation, let's work together.</p>
+            
+            <div class="collab-form">
+                <h3>Collaborate With Us</h3>
+                <form id="collaborationForm" class="needs-validation" action="https://api.web3forms.com/submit" method="POST" novalidate>
+                    <input type="hidden" name="access_key" value="1529e866-0edf-4bd2-a677-aa663140b60f" />
+                    <input type="hidden" name="subject" value="New Collaboration Proposal from INNOVerse" />
+                    <input type="checkbox" name="botcheck" id="botcheck" style="display: none;" />
+                    <div class="form-group">
+                        <label for="collabName">Name & Organization:</label>
+                        <input type="text" id="collabName" name="collabName" placeholder="Your name and organization" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="collabEmail">Email / Contact:</label>
+                        <input type="email" id="collabEmail" name="collabEmail" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="collabName">Phone Number:</label>
+                        <input type="number" id="collabphoneno" name="collabphoneno" placeholder="+91 5566778899" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="collabArea">Area of Collaboration:</label>
+                        <select id="collabArea" name="collabArea" required>
+                            <option value="">Select collaboration type</option>
+                            <option value="events">🎪 Events & Workshops</option>
+                            <option value="mentorship">🎓 Mentorship & Training</option>
+                            <option value="projects">🛠️ Joint Projects</option>
+                            <option value="internships">💼 Internships & Hiring</option>
+                            <option value="sponsorship">💰 Sponsorship & Funding</option>
+                            <option value="research">🔬 Research & Development</option>
+                            <option value="other">🤝 Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="collabMessage">Brief Message or Proposal:</label>
+                        <textarea id="collabMessage" name="collabMessage" placeholder="Tell us about your collaboration idea, what you'd like to achieve, and how we can work together..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="collabWebsite">Optional: Website / Portfolio:</label>
+                        <input type="url" id="collabWebsite" name="collabWebsite" placeholder="https://your-website.com">
+                    </div>
+                    <button type="submit">🤝 Submit Collaboration Proposal</button>
+                </form>
+                <p id="collaborationResult" class="text-base text-center text-gray-400" style="display:none;"></p>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <h2>🔗 Join hands with the next generation of changemakers.</h2>
+            <p>Let's create, inspire, and solve — together.</p>
+            <div class="cta-buttons">
+                <a href="#collaborationForm" class="cta-btn-secondary" onclick="document.getElementById('collaborationForm').scrollIntoView({behavior: 'smooth'})">Partner with Us</a>
+                <a href="#collaborationForm" class="cta-btn-secondary" onclick="document.getElementById('collaborationForm').scrollIntoView({behavior: 'smooth'})">Propose a Collaboration</a>
+                <a href="#collaborationForm" class="cta-btn-secondary" onclick="document.getElementById('collaborationForm').scrollIntoView({behavior: 'smooth'})">Become a Mentor</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="ENQUEbet logo" class="footer-logo">
+        <div>
+          <div class="footer-name" style="font-weight:800; font-size:1.05rem;">ENQUEbet</div>
+          <div class="footer-tagline">Empowering student innovators to build the future.</div>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="submit.html">Join Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+    <p><a href="fluxedustart@gmail.com" style="color:inherit;text-decoration:none;"></a>fluxedustart@gmail.com</p>
+        <p>+91 6302812452</p>
+        <p>ENQUEbet, MRCET, Hyderabad.</p>
+        <div class="footer-socials" style="margin-top:8px;">
+          <a href="https://www.instagram.com/enquebet/#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/enquebet" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="footer-bottom">
+    <div>&copy; <span id="footer-year-index-2">2025</span> ENQUEbet. All Rights Reserved.</div>
+      <div class="legal-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  (function(){
+    var y = new Date().getFullYear();
+    var el = document.getElementById('footer-year-collab-2'); if (el) el.textContent = y;
+  })();
+</script>
+
+    <script>
+        // Collaboration form submission using Web3Forms
+        (function () {
+            const form = document.getElementById('collaborationForm');
+            const result = document.getElementById('collaborationResult');
+
+            if (!form) return;
+
+            form.addEventListener('submit', function (event) {
+                // HTML5 validation
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    form.querySelectorAll(':invalid')[0]?.focus();
+                    form.classList.add('was-validated');
+                    return;
+                }
+
+                event.preventDefault();
+                event.stopPropagation();
+
+                const formData = new FormData(form);
+                const object = {};
+                formData.forEach((value, key) => {
+                    if (value instanceof File) return; // skip file for JSON
+                    object[key] = value;
+                });
+
+                const json = JSON.stringify(object);
+
+                result.style.display = 'block';
+                result.innerHTML = 'Please wait...';
+
+                fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        Accept: 'application/json',
+                    },
+                    body: json,
+                })
+                    .then(async (response) => {
+                        let resJson = await response.json();
+                        if (response.status === 200) {
+                            result.innerHTML = resJson.message || 'Message sent successfully.';
+                            result.classList.remove('text-gray-400');
+                            result.classList.add('text-green-500');
+                        } else {
+                            console.log(response);
+                            result.innerHTML = resJson.message || 'An error occurred while sending the message.';
+                            result.classList.remove('text-gray-400');
+                            result.classList.add('text-red-500');
+                        }
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                        result.innerHTML = 'Something went wrong!';
+                    })
+                    .then(function () {
+                        form.reset();
+                        form.classList.remove('was-validated');
+                        setTimeout(() => {
+                            result.style.display = 'none';
+                        }, 5000);
+                    });
+            });
+        })();
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+    <script src="navbar.js"></script>
+</body>
+</html>

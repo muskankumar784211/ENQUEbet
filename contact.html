@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ENQUEbet</title>
+    <meta name="description" content="Contact ENQUEbet - Get in touch, join the club, and connect on social media.">
+    <meta name="keywords" content="ENQUEbet, Innovation Club,enquebetenquebet startupenquebet innovationsenquebet techenquebet indiaenquebet ideasenquebet seo College, Projects, Events, Collaboration, Students, Technology, Ideasinnovative startup ideas new startup ideas 2025creative business ideasfuture technology startupscutting edge innovationslatest tech startupsemerging business trendsdisruptive startup ideasnext big startup 2025best startup ideas in indiatech innovation platformnew product innovationstop future inventionsunique business ideas💻 Technology & Gadgetslatest technology trendsai powered toolsmachine learning startupsartificial intelligence gadgetssmart home technologyiot innovationsblockchain startup ideaswearable tech trendsrobotics startup ideascloud computing solutionsquantum computing startups🌱 Sustainability & Green Techsustainable startup ideaseco friendly technologygreen energy innovationrenewable energy startupsclean tech solutionsclimate tech startupssolar energy innovationenvironmental business ideas📈 SEO / Digital Growthseo for startupsstartup seo strategyseo tips 2025digital marketing for startupsgrowth hacking ideasonline visibility for startupsbest seo toolskeyword research 2025organic traffic tipscontent marketing strategy🛠️ How-To & Fundinghow to start a tech startuphow to launch a business ideastartup funding tipsinvestors for startupsbusiness plan for innovationraise seed fundingventure capital for tech startups🧠 Creativity & Trendsfuture business opportunitiesinnovative product designtrending app ideasunique product ideascreative inventions 2025future gadgets listnext generation technology">
+    
+    <meta name="keywords" content="ENQUEbet, Contact, Join, Social, Innovation Club, College">
+    <meta name="author" content="ENQUEbet Club">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="theme-override.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        /* Navbar (preserve) */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: inherit;
+            box-shadow: 0 2px 12px rgba(106, 130, 251, 0.08);
+        }
+
+        /* Contact form styles */
+        /* Center the form container horizontally and vertically */
+        .contact-form-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2.5rem 1rem;
+            min-height: 60vh; /* keep form vertically centered on larger screens */
+        }
+        .contact-form-section .max-w-xl {
+            background: linear-gradient(180deg,#ffffff,#fbfbff);
+            max-width: 720px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        form.needs-validation { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+        form label { display: block; margin-bottom: .4rem; font-size: .9rem; font-weight: 600; color: #334155; }
+        form input[type="text"], form input[type="email"], form input[type="tel"], form textarea, form select {
+            width: 100%;
+            padding: .7rem .85rem;
+            border: 1px solid #e6e9ef;
+            border-radius: 10px;
+            font-size: .95rem;
+            color: #0f172a;
+            background: #fff;
+            box-sizing: border-box;
+            transition: box-shadow .15s ease, border-color .15s ease;
+        }
+
+        /* Social Media Icons Styling */
+        .social-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .social-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .social-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+        }
+
+        /* Brand-specific colors */
+        .social-link:has(.fa-youtube) .social-icon {
+            color: #FF0000;
+        }
+
+        .social-link:has(.fa-instagram) .social-icon {
+            color: #E4405F;
+        }
+
+        .social-link:has(.fa-whatsapp) .social-icon {
+            color: #25D366;
+        }
+
+        .social-link:has(.fa-github) .social-icon {
+            color: #333;
+        }
+
+        .social-link:has(.fa-telegram) .social-icon {
+            color: #0088cc;
+        }
+
+        .social-text {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* Hover effects */
+        .social-link:hover .social-icon {
+            transform: scale(1.1);
+        }
+        }
+        form input:focus, form textarea:focus, form select:focus {
+            outline: none;
+            border-color: #6a82fb;
+            box-shadow: 0 6px 18px rgba(106,130,251,0.12);
+        }
+        .invalid-feedback, .empty-feedback { color: #ef4444; font-size: .85rem; margin-top: .35rem; display: none; }
+        /* Show validation messages when form has been validated */
+        form.was-validated input:invalid + .invalid-feedback,
+        form.was-validated input:invalid + .empty-feedback,
+        form.was-validated textarea:invalid + .invalid-feedback,
+        form.was-validated textarea:invalid + .empty-feedback,
+        form.was-validated select:invalid + .invalid-feedback,
+        form.was-validated select:invalid + .empty-feedback {
+            display: block;
+        }
+
+        /* Button */
+        form button[type="submit"] {
+            display: inline-block;
+            background: linear-gradient(90deg,#6a82fb,#fc5c7d);
+            border: none;
+            color: #fff;
+            padding: .9rem 1rem;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform .12s ease, box-shadow .12s ease;
+        }
+        form button[type="submit"]:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(106,130,251,0.12); }
+
+        /* Result message */
+        #result { display: none; font-weight: 600; margin-top: .6rem; }
+        .text-green-500 { color: #16a34a; }
+        .text-red-500 { color: #dc2626; }
+
+        /* Layout helpers (small, non-Tailwind fallback) */
+        .flex { display: flex; }
+        .items-center { align-items: center; }
+        .space-x-4 { gap: 1rem; }
+        .mb-4 { margin-bottom: 1rem; }
+        .m-4 { margin: 1rem; }
+        .w-full { width: 100%; }
+
+        @media (max-width: 768px) {
+            .flex { flex-direction: column; }
+            .space-x-4 { gap: .75rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">ENQUEbet</div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" role="button" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="ideas.html">Ideas Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="nav-cta-group">
+            <a href="submit.html" class="cta-btn nav-btn">Submit Idea</a>
+            <a href="contact.html" class="cta-btn nav-btn secondary">Join</a>
+        </div>
+    </nav>
+    <main class="main-content contact">
+        <img src="photos/sitelogo.png" alt="ENQUEbet Logo" style="width: 200px; height: auto; margin: 20px auto; display: block;">
+
+        <!-- Hero Section -->
+        <section class="contact-hero">
+            <h1>📞 Contact Us – Let's Build the Future Together</h1>
+            <p class="contact-tagline">"Have an idea? A question? A passion to innovate? Reach out – we'd love to connect!"</p>
+            <div class="contact-cta">
+                <p>🧭 Encourage visitors to reach out for: Joining the club, collaborating on projects, hosting events, mentorship, sponsorships, and general queries.</p>
+            </div>
+        </section>
+
+                <!-- Contact Form Section (Web3Forms) -->
+                <section class="contact-form-section">
+                    <div class="flex items-center">
+                        <div class="container mx-auto">
+                            <div class="max-w-xl mx-auto my-6 bg-white p-5 rounded-md shadow-sm">
+                                <div class="text-center">
+                                    <h1 class="my-3 text-2xl font-semibold text-gray-700">Contact Us</h1>
+                                    <p class="text-gray-400">Fill up the form below to send us a message.</p>
+                                </div>
+                                <div class="m-4">
+                                    <form action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+                                        <input type="hidden" name="access_key" value="1529e866-0edf-4bd2-a677-aa663140b60f" />
+                                        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                                        <input type="checkbox" name="botcheck" id="botcheck" style="display: none;" />
+
+                                        <div class="flex mb-4 space-x-4">
+                                            <div class="w-full md:w-1/2">
+                                                <label for="first_name" class="block mb-2 text-sm text-gray-600">First Name</label>
+                                                <input type="text" name="name" id="first_name" placeholder="John" required class="w-full px-3 py-2 border-2 border-gray-200 rounded-md" />
+                                                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">Please provide your first name.</div>
+                                            </div>
+                                            <div class="w-full md:w-1/2">
+                                                <label for="lname" class="block mb-2 text-sm text-gray-600">Last Name</label>
+                                                <input type="text" name="last_name" id="lname" placeholder="Doe" required class="w-full px-3 py-2 border-2 border-gray-200 rounded-md" />
+                                                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">Please provide your last name.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex mb-4 space-x-4">
+                                            <div class="w-full md:w-1/2">
+                                                <label for="email" class="block mb-2 text-sm text-gray-600">Email Address</label>
+                                                <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 border-2 border-gray-200 rounded-md" />
+                                                <div class="empty-feedback text-red-400 text-sm mt-1">Please provide your email address.</div>
+                                                <div class="invalid-feedback text-red-400 text-sm mt-1">Please provide a valid email address.</div>
+                                            </div>
+
+                                            <div class="w-full md:w-1/2">
+                                                <label for="phone" class="block text-sm mb-2 text-gray-600">Phone Number</label>
+                                                <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 border-2 border-gray-200 rounded-md" />
+                                                <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">Please provide your phone number.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <label for="message" class="block mb-2 text-sm text-gray-600">Your Message</label>
+                                            <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 border-2 border-gray-200 rounded-md" required></textarea>
+                                            <div class="empty-feedback invalid-feedback text-red-400 text-sm mt-1">Please enter your message.</div>
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <button type="submit" class="w-full px-3 py-3 text-white bg-indigo-500 rounded-md">Send Message</button>
+                                        </div>
+                                        <p class="text-base text-center text-gray-400" id="result"></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+        <!-- Email & Socials Section -->
+        <section class="contact-socials">
+            <h2><i class="fas fa-address-book"></i> Connect With Us</h2>
+            <div class="social-links-grid">
+                <a href="https://www.youtube.com/@enquebet" class="social-link">
+                    <span class="social-icon"><i class="fab fa-youtube"></i></span>
+                    <span class="social-text">Youtube @enquebet</span>
+                </a>
+                <a href="https://www.instagram.com/enquebet/#" class="social-link">
+                    <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                    <span class="social-text">Instagram @enquebet</span>
+                </a>
+                <a href="https://whatsapp.com/channel/0029Va4kEK39Gv7XWbLcFB0a" class="social-link">
+                    <span class="social-icon"><i class="fab fa-whatsapp"></i></span>
+                    <span class="social-text">ENQUEbet – Open Community (WhatsApp)</span>
+                </a>
+                <a href="https://github.com/enquebet" class="social-link">
+                    <span class="social-icon"><i class="fab fa-github"></i></span>
+                    <span class="social-text">github.com/enquebet</span>
+                </a>
+                <a href="https://t.me/enquebet" class="social-link">
+                    <span class="social-icon"><i class="fab fa-telegram"></i></span>
+                    <span class="social-text">ENQUEbet Channel (Telegram)</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Motivational Message Section -->
+        <section class="motivational-message">
+            <h2>🌟 This is more than a club. It's a movement.</h2>
+            <div class="message-content">
+                <p>Whether you're a student, a builder, a dreamer, or a mentor — this is your space.</p>
+                <p>We believe every idea matters, and every person can create change.</p>
+                <p>So don't hesitate — say hello, spark a conversation, and start building with us.</p>
+                <p><strong>Innovation starts with connection. Let's begin here.</strong></p>
+            </div>
+        </section>
+
+        <!-- Location/Community Section -->
+        <section class="location-section">
+            <h2>📍 Building a Pan-India Innovation Community</h2>
+            <div class="location-content">
+                <p><strong>Online-first, always open.</strong></p>
+                <p>Offline events happen in major cities. Want to host one? Let us know!</p>
+                <div class="location-highlights">
+                    <span>🌐 Online Community</span>
+                    <span>🏙️ Major Cities</span>
+                    <span>🎪 Local Events</span>
+                    <span>🤝 Host Opportunities</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Club Benefits Section (Enhanced) -->
+        <section class="club-benefits-section">
+            <h2 class="club-benefits-title">💡 Why Join the Innovation Club?</h2>
+            <p class="club-benefits-desc">Whether you're a student, builder, creator, or simply curious — this club is your platform to explore, collaborate, and innovate.</p>
+            <hr class="club-benefits-divider" />
+            <h3 class="club-benefits-subtitle">🔧 Top Uses for Members</h3>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <span class="benefit-icon">🛠️</span>
+                    <h4>1. Hands-on Project Building</h4>
+                    <p>Take ideas from concept to working prototype. Join or form teams to build real-world solutions.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">📚</span>
+                    <h4>2. Learn Practical Skills</h4>
+                    <p>Coding, design thinking, problem solving, teamwork. Workshops, peer-led sessions, and build sprints.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">🤝</span>
+                    <h4>3. Connect & Collaborate</h4>
+                    <p>Meet students, creators, and mentors from various backgrounds. Find your tribe: coders, designers, business minds, and visionaries.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">🚀</span>
+                    <h4>4. Startup & Innovation Exposure</h4>
+                    <p>Learn how startups are built from the ground up. Guidance on ideation, pitching, product design, and validation.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">🎪</span>
+                    <h4>5. Showcase Your Work</h4>
+                    <p>Present your projects at demo days or exhibitions. Get featured on the club's platform and social media.</p>
+                </div>
+                <div class="benefit-card">
+                    <span class="benefit-icon">👨‍🏫</span>
+                    <h4>6. Mentorship & Guidance</h4>
+                    <p>Learn from experienced peers, alumni, and industry professionals. Gain clarity on your path — whether it's entrepreneurship, tech, or research.</p>
+                </div>
+            </div>
+            <hr class="club-benefits-divider" />
+            <h3 class="club-benefits-subtitle">🎯 What You'll Gain (Outcomes)</h3>
+            <div class="club-outcomes-grid">
+                <div class="club-outcome">
+                    <span class="outcome-icon">🚀</span>
+                    <strong>Real Project Experience</strong><br>
+                    <span>Build, ship, and document working solutions</span>
+                </div>
+                <div class="club-outcome">
+                    <span class="outcome-icon">🧠</span>
+                    <strong>Skill Development</strong><br>
+                    <span>Sharpen both tech and soft skills</span>
+                </div>
+                <div class="club-outcome">
+                    <span class="outcome-icon">📁</span>
+                    <strong>Portfolio Boost</strong><br>
+                    <span>Add real, team-based work to your resume</span>
+                </div>
+                <div class="club-outcome">
+                    <span class="outcome-icon">🔗</span>
+                    <strong>Strong Network</strong><br>
+                    <span>Meet future co-founders, collaborators, or mentors</span>
+                </div>
+                <div class="club-outcome">
+                    <span class="outcome-icon">🧑‍🎓</span>
+                    <strong>Personal Growth</strong><br>
+                    <span>Gain confidence, clarity, and creative courage</span>
+                </div>
+                <div class="club-outcome">
+                    <span class="outcome-icon">🏆</span>
+                    <strong>Recognition</strong><br>
+                    <span>Earn spotlight through club events and platforms</span>
+                </div>
+                <div class="club-outcome">
+                    <span class="outcome-icon">💼</span>
+                    <strong>Career Advantage</strong><br>
+                    <span>Stand out in interviews with practical experience</span>
+                </div>
+            </div>
+            <hr class="club-benefits-divider" />
+            <h3 class="club-benefits-subtitle">🌍 Who Can Join?</h3>
+            <div class="who-can-join">
+                <ul class="club-who-list">
+                    <li>Students from any stream or institution</li>
+                    <li>Early professionals, self-learners, or creators</li>
+                    <li>Anyone with a curious mind and the drive to build</li>
+                    <li>No experience required — just initiative</li>
+                </ul>
+                <blockquote class="club-benefits-quote">"You don't need to be an expert. You just need to start."</blockquote>
+            </div>
+        </section>
+
+        <!-- Join Section -->
+        <section class="join-section">
+            <h2>Join Our Community</h2>
+            <p>Be part of a vibrant network of creators, coders, and innovators. Get updates on events, workshops, and opportunities. Connect with us on your favorite platform:</p>
+            <div class="social-join-links">
+                <a href="#" class="cta-btn secondary">Join Telegram</a>
+                <a href="#" class="cta-btn secondary">Join WhatsApp</a>
+                <a href="#" class="cta-btn secondary">Follow on Instagram</a>
+            </div>
+            <div class="book-meeting">
+                <h3>Want to talk to us?</h3>
+                <a href="#" class="cta-btn">Book a Meeting</a>
+            </div>
+        </section>
+
+        <!-- CTA Footer -->
+        <section class="contact-cta-footer">
+            <h2>📢 Still thinking? Let's talk. We'd love to hear your ideas.</h2>
+            <div class="cta-buttons">
+                <a href="contact.html" class="cta-btn">Join the Club</a>
+                <a href="submit.html" class="cta-btn secondary">Suggest an Event</a>
+                <a href="projects.html" class="cta-btn secondary">Start a Collaboration</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+    <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="ENQUEbet logo" class="footer-logo">
+        <div>
+          <div class="footer-name" style="font-weight:800; font-size:1.05rem;">ENQUEbet</div>
+          <div class="footer-tagline">Empowering student innovators to build the future.</div>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="submit.html">Join Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+    <p><a href="fluxedustart@gmail.com" style="color:inherit;text-decoration:none;"></a>fluxedustart@gmail.com</p>
+        <p>+91 6302812452</p>
+        <p>ENQUEbet, MRCET, Hyderabad.</p>
+        <div class="footer-socials" style="margin-top:8px;">
+          <a href="https://www.instagram.com/enquebet/#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/enquebet" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="footer-bottom">
+    <div>&copy; <span id="footer-year-index-2">2025</span> ENQUEbet. All Rights Reserved.</div>
+      <div class="legal-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script>
+      (function(){
+        var y = new Date().getFullYear();
+        var el = document.getElementById('footer-year-contact'); if (el) el.textContent = y;
+      })();
+    </script>
+    <script src="navbar.js"></script>
+</body>
+</html>
+
+<script>
+    (function () {
+        "use strict";
+
+        // Fetch all the forms we want to apply custom validation styles to
+        const forms = document.querySelectorAll(".needs-validation");
+        const result = document.getElementById("result");
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms).forEach(function (form) {
+            form.addEventListener(
+                "submit",
+                function (event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+
+                        form.querySelectorAll(":invalid")[0].focus();
+                    } else {
+                        /*
+                         * Form Submission using fetch()
+                         */
+
+                        const formData = new FormData(form);
+                        event.preventDefault();
+                        event.stopPropagation();
+                        const object = {};
+                        formData.forEach((value, key) => {
+                            object[key] = value;
+                        });
+                        const json = JSON.stringify(object);
+                        result.style.display = "block";
+                        result.innerHTML = "Please wait...";
+
+                        fetch("https://api.web3forms.com/submit", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                                Accept: "application/json",
+                            },
+                            body: json,
+                        })
+                            .then(async (response) => {
+                                let json = await response.json();
+                                if (response.status == 200) {
+                                    result.innerHTML = json.message;
+                                    result.classList.remove("text-gray-500");
+                                    result.classList.add("text-green-500");
+                                } else {
+                                    console.log(response);
+                                    result.innerHTML = json.message;
+                                    result.classList.remove("text-gray-500");
+                                    result.classList.add("text-red-500");
+                                }
+                            })
+                            .catch((error) => {
+                                console.log(error);
+                                result.innerHTML = "Something went wrong!";
+                            })
+                            .then(function () {
+                                form.reset();
+                                form.classList.remove("was-validated");
+                                setTimeout(() => {
+                                    result.style.display = "none";
+                                }, 5000);
+                            });
+                    }
+                    form.classList.add("was-validated");
+                },
+                false
+            );
+        });
+    })();
+</script>
